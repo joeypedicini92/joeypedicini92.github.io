@@ -148,10 +148,10 @@ function NavItem({ href, children }) {
             : 'hover:text-teal-500 dark:hover:text-teal-400'
         )}
       >
-        {/* {children}
+        {children}
         {isActive && (
           <span className="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-teal-500/0 via-teal-500/40 to-teal-500/0 dark:from-teal-400/0 dark:via-teal-400/40 dark:to-teal-400/0" />
-        )} */}
+        )}
       </Link>
     </li>
   )
@@ -231,7 +231,7 @@ function Avatar({ large = false, className, ...props }) {
       className={clsx(className, 'pointer-events-auto')}
       {...props}
     >
-      {/* <Image
+      <Image
         src={avatarImage}
         alt=""
         sizes={large ? '4rem' : '2.25rem'}
@@ -240,7 +240,7 @@ function Avatar({ large = false, className, ...props }) {
           large ? 'h-16 w-16' : 'h-9 w-9'
         )}
         priority
-      /> */}
+      />
     </Link>
   )
 }
