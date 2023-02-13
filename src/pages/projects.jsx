@@ -3,48 +3,24 @@ import Head from 'next/head'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import logoAnimaginary from '@/images/logos/amazon.svg'
-import logoCosmos from '@/images/logos/amazon.svg'
-import logoHelioStream from '@/images/logos/amazon.svg'
-import logoOpenShuttle from '@/images/logos/amazon.svg'
 import logoComunidaddies from '@/images/logos/comunidaddies.png'
+import logoGithub from '@/images/logos/github.png'
 
 const projects = [
   {
     name: 'Comunidaddies',
     description:
-      'A community built around daily journaling, with a focus on mental health.',
+      'A community built around daily journaling, with a focus on mental health. Built with Angular and Supabase.',
     link: { href: 'https://comunidaddies.com/', label: 'Comunidaddies' },
     logo: logoComunidaddies,
   },
   {
-    name: 'Animaginary',
+    name: 'Diplomacy',
     description:
-      'High performance web animation library, hand-written in optimized WASM.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoAnimaginary,
-  },
-  {
-    name: 'HelioStream',
-    description:
-      'Real-time video streaming library, optimized for interstellar transmission.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoHelioStream,
-  },
-  {
-    name: 'cosmOS',
-    description:
-      'The operating system that powers our Planetaria space shuttles.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoCosmos,
-  },
-  {
-    name: 'OpenShuttle',
-    description:
-      'The schematics for the first rocket I designed that successfully made it to orbit.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoOpenShuttle,
-  },
+      'A modern Diplomacy game engine and SVG-based web app, built with Ember, Ruby and Firebase.',
+    link: { href: 'https://github.com/joeypedicini92/diplomacy', label: 'github.com' },
+    logo: logoGithub,
+  }
 ]
 
 function LinkIcon(props) {
