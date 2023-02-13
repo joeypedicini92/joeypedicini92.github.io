@@ -194,8 +194,8 @@ function Resume() {
           </li>
         ))}
       </ol>
-      <Button href="#" variant="secondary" className="group mt-6 w-full">
-        Download CV
+      <Button href="/Joey Pedicini Resume.pdf" target="_blank" variant="secondary" className="group mt-6 w-full">
+        Download Resume
         <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
       </Button>
     </div>
@@ -234,7 +234,7 @@ export default function Home() {
     <>
       <Head>
         <title>
-          Joey Pedicini - Software designer, founder, and amateur astronaut
+          Joey Pedicini - Software developer
         </title>
         <meta
           name="description"
@@ -244,7 +244,7 @@ export default function Home() {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Software Designer, developer, and user.
+            Software designer, developer, and user.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
             I’m Joey, a software designer and entrepreneur based in Columbus,
