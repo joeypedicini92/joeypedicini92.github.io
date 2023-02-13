@@ -17,10 +17,10 @@ import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
 import image4 from '@/images/photos/image-4.jpg'
 import image5 from '@/images/photos/image-5.jpg'
-import logoAirbnb from '@/images/logos/airbnb.svg'
-import logoFacebook from '@/images/logos/facebook.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
-import logoStarbucks from '@/images/logos/starbucks.svg'
+import logoAmazon from '@/images/logos/amazon.svg'
+import logoBattleface from '@/images/logos/battleface.svg'
+import logoCOTA from '@/images/logos/cota.svg'
+import logoChase from '@/images/logos/chase.svg'
 import { formatDate } from '@/lib/formatDate'
 
 function MailIcon(props) {
@@ -122,35 +122,35 @@ function Newsletter() {
 function Resume() {
   let resume = [
     {
-      company: 'Planetaria',
-      title: 'CEO',
-      logo: logoPlanetaria,
-      start: '2019',
+      company: 'Amazon',
+      title: 'Frontend Engineer II',
+      logo: logoAmazon,
+      start: 'April 2022',
       end: {
         label: 'Present',
         dateTime: new Date().getFullYear(),
       },
     },
     {
-      company: 'Airbnb',
-      title: 'Product Designer',
-      logo: logoAirbnb,
-      start: '2014',
-      end: '2019',
+      company: 'battleface',
+      title: 'Senior Software Engineer',
+      logo: logoBattleface,
+      start: 'September 2021',
+      end: 'April 2022',
     },
     {
-      company: 'Facebook',
-      title: 'iOS Software Engineer',
-      logo: logoFacebook,
-      start: '2011',
-      end: '2014',
+      company: 'COTA',
+      title: 'Senior Software Engineer',
+      logo: logoCOTA,
+      start: 'October 2016',
+      end: 'September 2021',
     },
     {
-      company: 'Starbucks',
-      title: 'Shift Supervisor',
-      logo: logoStarbucks,
-      start: '2008',
-      end: '2011',
+      company: 'JP Morgan Chase',
+      title: 'Application Developer',
+      logo: logoChase,
+      start: 'January 2013',
+      end: 'October 2016',
     },
   ]
 
