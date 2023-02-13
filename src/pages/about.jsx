@@ -61,35 +61,58 @@ export default function About() {
           </div>
           <div className="lg:order-first lg:row-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-              I’m Joey Pedicini. I live in New York City, where I design the
-              future.
+              Hi, I’m Joey Pedicini.
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
-              <p>
-                I’ve loved making things for as long as I can remember, and
-                wrote my first program when I was 6 years old, just two weeks
-                after my mom brought home the brand new Macintosh LC 550 that I
-                taught myself to type on.
+              <p className="text-lg text-gray-500">
+                Hello! My name is Joey and I am the founder of Comunidaddies. I
+                am a husband, father, and a software developer with 10 years of
+                professional experience, and have a passion for building tools
+                which genuinely improve the lives of others.
               </p>
               <p>
-                The only thing I loved more than computers as a kid was space.
-                When I was 8, I climbed the 40-foot oak tree at the back of our
-                yard while wearing my older sister’s motorcycle helmet, counted
-                down from three, and jumped — hoping the tree was tall enough
-                that with just a bit of momentum I’d be able to get to orbit.
+                I became a first time father right as lock downs were happening
+                across the world. It was a difficult time to adjust to so many
+                life changes at once. I reached a breaking point about halfway
+                through that first year and was taken to the ER for
+                self-inflicted wounds. Since that time I decided that I wanted
+                to help new dads be the dads that they want to be.
               </p>
               <p>
-                I spent the next few summers indoors working on a rocket design,
-                while I recovered from the multiple surgeries it took to fix my
-                badly broken legs. It took nine iterations, but when I was 15 I
-                sent my dad’s Blackberry into orbit and was able to transmit a
-                photo back down to our family computer from space.
+                Recently begun to dive deep into spiritual learning, therapy,
+                inner child healing, and general mindfulness. Part of that
+                process has involved a lot of writing and journaling and
+                reflection. I started by training myself to write whenever I
+                sense my mind starting to wander. That then turned into a daily
+                practice of writing down my thoughts and feelings.
               </p>
               <p>
-                Today, I’m the founder of Planetaria, where we’re working on
-                civilian space suits and manned shuttle kits you can assemble at
-                home so that the next generation of kids really <em>can</em>{' '}
-                make it to orbit — from the comfort of their own backyards.
+                The problem I started to run into was that I was writing in a
+                lot of different places. I had a journal, a Notion notebook,
+                Google Docs, and a few other places where I was writing. I
+                wanted to consolidate all of that into one place, and I wanted
+                to be able to share it with others, and share my wisdom with
+                Lucy as she grows up.
+              </p>
+              <p>
+                That’s where Comunidaddies comes in; I initially wanted a place
+                where I could share learned wisdom with Lucy as she gets older.
+                We share the same birthday she is exactly 28 years younger than
+                me. What do I want her to know about me, about herself, about
+                the world, when she turns 28? The problem I have with most
+                social media or blogging platforms is that they are not designed
+                for long form writing. They are also not designed to be shared
+                in the long term future. Those were problems I wanted to solve
+                with Comunidaddies.
+              </p>
+              <p>
+                Beyond Communidaddies, I have dreams to start various 
+                software-related companies, from a bootcamp serving individuals 
+                from underrepresented backgrounds, to a software consultancy, 
+                to a software development agency. I am also a musician, and I 
+                have a passion for creating music and sharing it with the world. 
+                I have a few projects in the works, and I am excited to share 
+                them with you all.
               </p>
             </div>
           </div>
