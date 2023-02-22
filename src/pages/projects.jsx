@@ -5,6 +5,7 @@ import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import logoComunidaddies from '@/images/logos/comunidaddies.png'
 import logoGithub from '@/images/logos/github.png'
+import logoCodeCompass from '@/images/logos/codecompass.jpg'
 
 const projects = [
   {
@@ -20,6 +21,12 @@ const projects = [
       'A modern Diplomacy game engine and SVG-based web app, built with Ember, Ruby and Firebase.',
     link: { href: 'https://github.com/joeypedicini92/diplomacy', label: 'github.com' },
     logo: logoGithub,
+  },
+  {
+    name: 'CodeCompass',
+    description: 'A mentorship platform for software engineers.',
+    link: { href: 'https://www.codecompass.org/', label: 'CodeCompass' },
+    logo: logoCodeCompass
   }
 ]
 
