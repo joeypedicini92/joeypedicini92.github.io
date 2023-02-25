@@ -273,6 +273,9 @@ export default function Home() {
             />
           </div>
         </div>
+        <div className="mt-6 flex gap-6">
+        <a href="https://mentorcruise.com/mentor/joeypedicini/"> <Image src="https://cdn.mentorcruise.com/img/banner/navy-available-badge.svg" width="240" height="240" alt="MentorCruise"></Image> </a>
+        </div>
       </Container>
       <Photos />
       <Container className="mt-24 md:mt-28">
