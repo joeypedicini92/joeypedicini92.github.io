@@ -5,15 +5,10 @@ import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import logoComunidaddies from '@/images/logos/comunidaddies.png'
 import logoGithub from '@/images/logos/github.png'
-import logoCodeCompass from '@/images/logos/codecompass.jpg'
+import logoCodeCompass from '@/images/logos/codecompass.png'
+import logoAfricaBridge from '@/images/logos/africabridge.jpg'
 
 const projects = [
-  {
-    name: 'CodeCompass',
-    description: 'A mentorship platform for software engineers.',
-    link: { href: 'https://www.codecompass.org/', label: 'CodeCompass' },
-    logo: logoCodeCompass
-  },
   {
     name: 'Comunidaddies',
     description:
@@ -22,18 +17,29 @@ const projects = [
     logo: logoComunidaddies,
   },
   {
+    name: 'CodeCompass',
+    description: 'A mentorship platform for software engineers. Built with Next.js.',
+    link: { href: 'https://www.codecompass.org/', label: 'CodeCompass' },
+    logo: logoCodeCompass
+  },
+  {
+    name: 'Angular Module Federation Starter',
+    description: 'A starter repo for Angular projects with Module Federation which laid the groundwork for a microapp repo at battleface. Built with Nx.',
+    link: { href: 'https://github.com/joeypedicini92/angular-mfe-starter', label: 'github.com' },
+    logo: logoGithub
+  },
+  {
+    name: 'Africa Bridge Data Collection',
+    description: 'A data collection app for the non-profit Africa Bridge which supported their independent program audit report in 2021. Built with ODK Collect.',
+    link: { href: 'https://africabridge.aplos.org/Page/20195', label: 'Kisondela Wellbeing Survey' },
+    logo: logoAfricaBridge
+  },
+  {
     name: 'Diplomacy',
     description:
       'A modern Diplomacy game engine and SVG-based web app, built with Ember, Ruby and Firebase.',
-    link: { href: 'https://github.com/joeypedicini92/diplomacy', label: 'github.com' },
+    link: { href: 'https://www.amazon.com/b?node=57181331011', label: 'github.com' },
     logo: logoGithub,
-  },
-
-  {
-    name: 'CodeCompass',
-    description: 'A mentorship platform for software engineers.',
-    link: { href: 'https://www.codecompass.org/', label: 'CodeCompass' },
-    logo: logoCodeCompass
   },
 ]
 
