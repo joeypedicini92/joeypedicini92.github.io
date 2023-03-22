@@ -9,6 +9,12 @@ import logoCodeCompass from '@/images/logos/codecompass.jpg'
 
 const projects = [
   {
+    name: 'CodeCompass',
+    description: 'A mentorship platform for software engineers.',
+    link: { href: 'https://www.codecompass.org/', label: 'CodeCompass' },
+    logo: logoCodeCompass
+  },
+  {
     name: 'Comunidaddies',
     description:
       'A community built around daily journaling, with a focus on mental health. Built with Angular and Supabase.',
@@ -22,12 +28,13 @@ const projects = [
     link: { href: 'https://github.com/joeypedicini92/diplomacy', label: 'github.com' },
     logo: logoGithub,
   },
+
   {
     name: 'CodeCompass',
     description: 'A mentorship platform for software engineers.',
     link: { href: 'https://www.codecompass.org/', label: 'CodeCompass' },
     logo: logoCodeCompass
-  }
+  },
 ]
 
 function LinkIcon(props) {
@@ -48,12 +55,12 @@ export default function Projects() {
         <title>Projects - Joey Pedicini</title>
         <meta
           name="description"
-          content="Things I’ve made trying to put my dent in the universe."
+          content="Creative Pursuits. Personal Projects. Learning Experiences."
         />
       </Head>
       <SimpleLayout
-        title="Things I’ve made trying to put my dent in the universe."
-        intro="I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved."
+        title="My Personal Contributions and Learning Experiences"
+        intro="Welcome to the projects page of my portfolio website! I'm excited to share with you some personal side projects that I've worked on during my spare time. These projects represent my curiosity, my eagerness to learn, and my passion for exploring new technologies and techniques in software development."
       >
         <ul
           role="list"

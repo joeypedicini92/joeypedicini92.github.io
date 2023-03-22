@@ -238,29 +238,19 @@ export default function Home() {
         </title>
         <meta
           name="description"
-          content="I’m Joey, a software designer and entrepreneur based in Columbus, Ohio."
+          content="I’m Joey, a software developer based in Columbus, Ohio."
         />
       </Head>
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Software designer, developer, and user.
+          Innovating with Empathy and Expertise
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Joey, a software designer and entrepreneur based in Columbus,
+            I’m Joey, a software developer based in Columbus,
             Ohio.
           </p>
           <div className="mt-6 flex gap-6">
-            <SocialLink
-              href="https://www.instagram.com/dadbod591"
-              aria-label="Follow on Instagram"
-              icon={InstagramIcon}
-            />
-            <SocialLink
-              href="https://soundcloud.com/los-gookies"
-              aria-label="Follow on SoundCloud"
-              icon={SoundcloudIcon}
-            />
             <SocialLink
               href="https://github.com/joeypedicini92"
               aria-label="Follow on GitHub"
@@ -272,9 +262,6 @@ export default function Home() {
               icon={LinkedInIcon}
             />
           </div>
-        </div>
-        <div className="mt-6 flex gap-6">
-        <a href="https://mentorcruise.com/mentor/joeypedicini/"> <Image src="https://cdn.mentorcruise.com/img/banner/navy-available-badge.svg" width="240" height="240" alt="MentorCruise"></Image> </a>
         </div>
       </Container>
       <Photos />

@@ -65,54 +65,22 @@ export default function About() {
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p className="text-lg text-gray-500">
-                Hello! My name is Joey and I am the founder of Comunidaddies. I
-                am a husband, father, and a software developer with 10 years of
-                professional experience, and have a passion for building tools
-                which genuinely improve the lives of others.
+              As a dedicated software engineer with over ten years of experience in the industry, I&apos;ve been fortunate enough to work in a variety of roles. This diverse background has given me the opportunity to develop a comprehensive skill set and learn from many talented colleagues. I am always looking for ways to grow, learn, and contribute positively to the tech industry, and I believe that collaboration and continuous improvement are key to success.
               </p>
               <p>
-                I became a first time father right as lock downs were happening
-                across the world. It was a difficult time to adjust to so many
-                life changes at once. I reached a breaking point about halfway
-                through that first year and was taken to the ER for
-                self-inflicted wounds. Since that time I decided that I wanted
-                to help new dads be the dads that they want to be.
+              One of the most rewarding aspects of my career has been the opportunity to lead and mentor others. I have had the privilege of guiding teams through complex projects, fostering a culture of collaboration and mutual learning. By emphasizing the importance of open communication and the sharing of ideas, I have been able to help create environments where everyone can thrive and excel.
               </p>
               <p>
-                Recently begun to dive deep into spiritual learning, therapy,
-                inner child healing, and general mindfulness. Part of that
-                process has involved a lot of writing and journaling and
-                reflection. I started by training myself to write whenever I
-                sense my mind starting to wander. That then turned into a daily
-                practice of writing down my thoughts and feelings.
+              My passion for technology extends beyond the workplace. I firmly believe in giving back to the community and have been involved in several volunteer initiatives throughout the years. I have helped set up mobile data collection solutions in Tanzania, mentored students in computer science clubs, and taught high school computer science classes via Skype. These experiences have been incredibly fulfilling, allowing me to share my knowledge while also learning from others.
               </p>
               <p>
-                The problem I started to run into was that I was writing in a
-                lot of different places. I had a journal, a Notion notebook,
-                Google Docs, and a few other places where I was writing. I
-                wanted to consolidate all of that into one place, and I wanted
-                to be able to share it with others, and share my wisdom with
-                Lucy as she grows up.
+              In my career, I&apos;ve had the opportunity to work on many challenging projects, but one of my proudest achievements was at battleface. As the lead frontend developer and senior Angular expert, I architected a new micro-frontend architecture using the latest frontend tools and best practices in Nx, and Module Federation API. This solution effectively addressed maintainability and scalability issues within the company, providing a more efficient and streamlined process that positively impacted the entire engineering organization.
               </p>
               <p>
-                That’s where Comunidaddies comes in; I initially wanted a place
-                where I could share learned wisdom with Lucy as she gets older.
-                We share the same birthday she is exactly 28 years younger than
-                me. What do I want her to know about me, about herself, about
-                the world, when she turns 28? The problem I have with most
-                social media or blogging platforms is that they are not designed
-                for long form writing. They are also not designed to be shared
-                in the long term future. Those were problems I wanted to solve
-                with Comunidaddies.
+              Another proud technical accomplishment of mine was during my tenure at COTA Healthcare, where I designed and built the abstractor grading platform. The platform allows users to easily compare and grade large, complex datasets, which was previously done using excel sheets. This innovative solution transformed the way our users worked with data, improving accuracy and efficiency while also providing valuable insights to drive business decisions.
               </p>
               <p>
-                Beyond Communidaddies, I have dreams to start various 
-                software-related companies, from a bootcamp serving individuals 
-                from underrepresented backgrounds, to a software consultancy, 
-                to a software development agency. I am also a musician, and I 
-                have a passion for creating music and sharing it with the world. 
-                I have a few projects in the works, and I am excited to share 
-                them with you all.
+              As I continue to advance in my career, I remain committed to learning new technologies and staying up-to-date with industry trends. I am eager to contribute to the success of future projects, collaborate with talented professionals, and be an active member of the tech community. My focus on leadership, continuous improvement, and giving back has shaped the professional I am today, and I look forward to the opportunities and challenges that lie ahead.
               </p>
             </div>
           </div>
