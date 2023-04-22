@@ -10,10 +10,10 @@ import logoAfricaBridge from '@/images/logos/africabridge.jpg'
 
 const projects = [
   {
-    name: 'Comunidaddies',
+    name: 'Bonjournl',
     description:
       'A community built around daily journaling, with a focus on mental health. Built with Angular and Supabase.',
-    link: { href: 'https://comunidaddies.com/', label: 'Comunidaddies' },
+    link: { href: 'https://bonjournl.com/', label: 'Bonjournl' },
     logo: logoComunidaddies,
   },
   {
@@ -78,7 +78,7 @@ export default function Projects() {
                 <Image
                   src={project.logo}
                   alt=""
-                  className="h-8 w-8"
+                  className="w-10"
                   unoptimized
                 />
               </div>
