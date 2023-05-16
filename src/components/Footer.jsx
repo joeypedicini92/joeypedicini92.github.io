@@ -23,6 +23,7 @@ export function Footer() {
               <div className="flex gap-6 text-sm font-medium text-zinc-800 dark:text-zinc-200">
                 <NavLink href="/about">About</NavLink>
                 <NavLink href="/projects">Projects</NavLink>
+                <NavLink href="https://app.bonjournl.com/public/824514e2-5960-4e2c-8b60-2f54bf3a4d86">Blog</NavLink>
               </div>
               <p className="text-sm text-zinc-400 dark:text-zinc-500">
                 &copy; {new Date().getFullYear()} Joey Pedicini. All rights
