@@ -124,6 +124,7 @@ function MobileNavigation(props) {
                 <MobileNavItem href="/about">About</MobileNavItem>
                 <MobileNavItem href="/projects">Projects</MobileNavItem>
                 <MobileNavItem href="https://app.bonjournl.com/public/824514e2-5960-4e2c-8b60-2f54bf3a4d86">Blog</MobileNavItem>
+                <MobileNavItem href="/music">Music</MobileNavItem>
               </ul>
             </nav>
           </Popover.Panel>
@@ -163,6 +164,7 @@ function DesktopNavigation(props) {
         <NavItem href="/about">About</NavItem>
         <NavItem href="/projects">Projects</NavItem>
         <NavItem href="https://app.bonjournl.com/public/824514e2-5960-4e2c-8b60-2f54bf3a4d86">Blog</NavItem>
+        <NavItem href="/music">Music</NavItem>
       </ul>
     </nav>
   )
