@@ -7,8 +7,16 @@ import logoComunidaddies from '@/images/logos/comunidaddies.png'
 import logoGithub from '@/images/logos/github.png'
 import logoCodeCompass from '@/images/logos/codecompass.png'
 import logoAfricaBridge from '@/images/logos/africabridge.jpg'
+import logoFridgeraider from '@/images/logos/fridgeraider.png'
 
 const projects = [
+  {
+    name: 'Fridgeraider',
+    description:
+      'A web app for generating new recipes based off ingredients in your kitchen, with added tools to help track food expiration dates and reduce food waste. Contributed to by a team of devs at CodeCompass. Built with Next.js and Firebase.',
+    link: { href: 'https://app.fridgeraider.org/', label: 'Fridgeraider' },
+    logo: logoFridgeraider,
+  },
   {
     name: 'Bonjournl',
     description:

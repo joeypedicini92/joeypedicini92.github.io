@@ -123,7 +123,7 @@ function MobileNavigation(props) {
               <ul className="-my-2 divide-y divide-zinc-100 text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
                 <MobileNavItem href="/about">About</MobileNavItem>
                 <MobileNavItem href="/projects">Projects</MobileNavItem>
-                <MobileNavItem href="https://app.bonjournl.com/public/824514e2-5960-4e2c-8b60-2f54bf3a4d86">Blog</MobileNavItem>
+                <MobileNavItem href="/blog">Blog</MobileNavItem>
                 <MobileNavItem href="/music">Music</MobileNavItem>
               </ul>
             </nav>
@@ -163,7 +163,7 @@ function DesktopNavigation(props) {
       <ul className="flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
         <NavItem href="/about">About</NavItem>
         <NavItem href="/projects">Projects</NavItem>
-        <NavItem href="https://app.bonjournl.com/public/824514e2-5960-4e2c-8b60-2f54bf3a4d86">Blog</NavItem>
+        <NavItem href="/blog">Blog</NavItem>
         <NavItem href="/music">Music</NavItem>
       </ul>
     </nav>
