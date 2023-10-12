@@ -68,13 +68,17 @@ export default function Projects() {
         title="My Musical Endeavors"
         intro="I started playing trombone as a kid and when I first went to university I met some great dudes who had a band called Discount Tents and they were nice enough to let me make music with them. I've kept in touch with them over the years, and recently Danny helped teach me the basics of recording and mixing and playing synthesizer and guitar. I've been making music on my own since then and I'm really enjoying it. I hope you enjoy it too!"
       >
+        <iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1626327117&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true" width="100%" height="300" frameBorder="0" allow="autoplay"></iframe>
+        <br></br>
+        <iframe src="https://open.spotify.com/embed/album/7pKO6J6HeAcj5EhOD9Aj5C?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <br></br>
         <iframe src="https://open.spotify.com/embed/album/7kuyvK4UyvYRMG0sKFVORz?utm_source=generator" width="100%" height="352" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         <br></br>
         <iframe src="https://open.spotify.com/embed/album/3ngjJ6ayCbAAHXU2AA7ZTG?utm_source=generator" width="100%" height="352" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         <br></br>
-        <iframe src="https://bandcamp.com/EmbeddedPlayer/album=989791973/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" loading="lazy"><a href="https://discounttents.bandcamp.com/album/clementine">Clementine by Discount Tents</a></iframe>
+        <iframe src="https://bandcamp.com/EmbeddedPlayer/album=989791973/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" width="100%" loading="lazy"><a href="https://discounttents.bandcamp.com/album/clementine">Clementine by Discount Tents</a></iframe>
         <br></br>
-        <iframe src="https://bandcamp.com/EmbeddedPlayer/album=328204959/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" loading="lazy"><a href="https://discounttents.bandcamp.com/album/columbus-boychoir">Columbus Boychoir by Discount Tents</a></iframe>
+        <iframe src="https://bandcamp.com/EmbeddedPlayer/album=328204959/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" width="100%" loading="lazy"><a href="https://discounttents.bandcamp.com/album/columbus-boychoir">Columbus Boychoir by Discount Tents</a></iframe>
       </SimpleLayout>
     </>
   )
