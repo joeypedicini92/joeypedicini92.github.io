@@ -13,21 +13,21 @@ const projects = [
   {
     name: 'Fridgeraider',
     description:
-      'A web app for generating new recipes based off ingredients in your kitchen, with added tools to help track food expiration dates and reduce food waste. Contributed to by a team of devs at CodeCompass. Built with Next.js and Firebase.',
+      'A web app for generating new recipes based off ingredients in your kitchen, with added tools to help track food expiration dates and reduce food waste. Contributed to by a team of devs at CodeCompass. PWA Built with Next.js and Firebase.',
     link: { href: 'https://app.fridgeraider.org/', label: 'Fridgeraider' },
     logo: logoFridgeraider,
   },
   {
     name: 'Bonjournl',
     description:
-      'A community built around daily journaling, with a focus on mental health. Built with Angular and Supabase.',
+      'A community built around daily journaling, with a focus on mental health. PWA Built with Angular, Tailwind and Supabase.',
     link: { href: 'https://bonjournl.com/', label: 'Bonjournl' },
     logo: logoComunidaddies,
   },
   {
-    name: 'CodeCompass',
-    description: 'A mentorship platform for software engineers. Built with Next.js.',
-    link: { href: 'https://www.codecompass.org/', label: 'CodeCompass' },
+    name: 'Breakfast Menu',
+    description: 'A simple morning routine picker made for a client. Receive a notification each morning using web push notifications. PWA Built with Next.js, Firebase, and Tailwind.',
+    link: { href: 'https://breakfast-menu.vercel.app/', label: 'Breakfast Menu' },
     logo: logoCodeCompass
   },
   {
