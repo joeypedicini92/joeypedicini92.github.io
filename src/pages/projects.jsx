@@ -33,7 +33,7 @@ const projects = [
   {
     name: 'Africa Bridge Data Collection',
     description: 'A data collection app for the non-profit Africa Bridge which supported their independent program audit report in 2021. Built with ODK Collect.',
-    link: { href: 'https://africabridge.aplos.org/Page/20195', label: 'Kisondela Wellbeing Survey' },
+    link: { href: 'https://africabridge.org/our-impact/', label: 'Kisondela Wellbeing Survey 2021' },
     logo: logoAfricaBridge
   },
   {
