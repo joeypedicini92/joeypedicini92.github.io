@@ -11,9 +11,16 @@ import logoFridgeraider from '@/images/logos/fridgeraider.png'
 
 const projects = [
   {
+    name: 'Diplomacy AI (work in progress)',
+    description:
+      'A modern Diplomacy game engine and SVG-based web app to play with AI, built with Next.js, Supabase, ChatGPT.',
+    link: { href: 'https://diplomacy-ai.vercel.app/', label: 'Diplomacy AI' },
+    logo: logoGithub,
+  },
+  {
     name: 'Fridgeraider',
     description:
-      'A web app for generating new recipes based off ingredients in your kitchen, with added tools to help track food expiration dates and reduce food waste. Contributed to by a team of devs at CodeCompass. PWA Built with Next.js and Firebase.',
+      'A web app for generating new recipes based off ingredients in your kitchen, with added tools to help track food expiration dates and reduce food waste. Contributed to by a team of devs at CodeCompass. PWA Built with Next.js, ChatGPT and Firebase.',
     link: { href: 'https://app.fridgeraider.org/', label: 'Fridgeraider' },
     logo: logoFridgeraider,
   },
@@ -41,14 +48,7 @@ const projects = [
     description: 'A starter repo for Angular projects with Module Federation which laid the groundwork for a microapp repo at battleface. Built with Nx.',
     link: { href: 'https://github.com/joeypedicini92/angular-mfe-starter', label: 'github.com' },
     logo: logoGithub
-  },
-  {
-    name: 'Diplomacy',
-    description:
-      'A modern Diplomacy game engine and SVG-based web app, built with Ember, Ruby and Firebase.',
-    link: { href: 'https://github.com/joeypedicini92/diplomacy', label: 'github.com' },
-    logo: logoGithub,
-  },
+  }
 ]
 
 function LinkIcon(props) {
