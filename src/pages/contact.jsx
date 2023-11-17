@@ -101,7 +101,7 @@ export default function Contact() {
       </Head>
       <SimpleLayout
         title="Consulting"
-        intro="I'm available for consulting on a variety of projects. I specialize in modernizing legacy applications, custom MVP development, and web application design and architecture. Schedule a call with me to discuss how I can help you with your project."
+        intro="I am available for consulting on various projects through my company, CodeCompass, LLC. My areas of expertise include modernizing legacy applications, custom MVP development, and web application design and architecture. Schedule a call with me to discuss how I can assist you with your project."
       >
         <Container className="mt-14 sm:mt-22 lg:mt-30 mb-10">
           <div className="grid grid-cols-1 gap-x-8 gap-y-24 lg:grid-cols-2">
