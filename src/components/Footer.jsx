@@ -25,6 +25,7 @@ export function Footer() {
                 <NavLink href="/projects">Projects</NavLink>
                 <NavLink href="/blog">Blog</NavLink>
                 <NavLink href="/music">Music</NavLink>
+                <NavLink href="/contact">Consulting</NavLink>
               </div>
               <p className="text-sm text-zinc-400 dark:text-zinc-500">
                 &copy; {new Date().getFullYear()} Joey Pedicini. All rights

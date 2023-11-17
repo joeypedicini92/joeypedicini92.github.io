@@ -58,10 +58,10 @@ export default function Projects() {
   return (
     <>
       <Head>
-        <title>Projects - Joey Pedicini</title>
+        <title>Music - Joey Pedicini</title>
         <meta
           name="description"
-          content="Creative Pursuits. Personal Projects. Learning Experiences."
+          content="My Musical Endeavors."
         />
       </Head>
       <SimpleLayout
