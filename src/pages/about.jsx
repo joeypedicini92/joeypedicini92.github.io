@@ -44,7 +44,7 @@ export default function About() {
         <title>About - Joey Pedicini</title>
         <meta
           name="description"
-          content="I’m Joey Pedicini. I live in New York City, where I design the future."
+          content="I’m Joey Pedicini, a freelance software developer based in Columbus, Ohio."
         />
       </Head>
       <Container className="mt-16 sm:mt-32">
@@ -65,22 +65,22 @@ export default function About() {
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p className="text-lg text-gray-500">
-              As a dedicated software engineer with over ten years of experience in the industry, I&apos;ve been fortunate enough to work in a variety of roles. This diverse background has given me the opportunity to develop a comprehensive skill set and learn from many talented colleagues. I am always looking for ways to grow, learn, and contribute positively to the tech industry, and I believe that collaboration and continuous improvement are key to success.
+                As a dedicated software engineer with over ten years of experience in the industry, I&apos;ve been fortunate enough to work in a variety of roles. This diverse background has given me the opportunity to develop a comprehensive skill set and learn from many talented colleagues. I am always looking for ways to grow, learn, and contribute positively to the tech industry, and I believe that collaboration and continuous improvement are key to success.
               </p>
               <p>
-              One of the most rewarding aspects of my career has been the opportunity to lead and mentor others. I have had the privilege of guiding teams through complex projects, fostering a culture of collaboration and mutual learning. By emphasizing the importance of open communication and the sharing of ideas, I have been able to help create environments where everyone can thrive and excel.
+                One of the most rewarding aspects of my career has been the opportunity to lead and mentor others. I have had the privilege of guiding teams through complex projects, fostering a culture of collaboration and mutual learning. By emphasizing the importance of open communication and the sharing of ideas, I have been able to help create environments where everyone can thrive and excel.
               </p>
               <p>
-              My passion for technology extends beyond the workplace. I firmly believe in giving back to the community and have been involved in several volunteer initiatives throughout the years. I have helped set up mobile data collection solutions in Tanzania, mentored students in computer science clubs, and taught high school computer science classes via Skype. These experiences have been incredibly fulfilling, allowing me to share my knowledge while also learning from others.
+                My passion for technology extends beyond the workplace. I firmly believe in giving back to the community and have been involved in several volunteer initiatives throughout the years. I have helped set up mobile data collection solutions in Tanzania, mentored students in computer science clubs, and taught high school computer science classes via Skype. These experiences have been incredibly fulfilling, allowing me to share my knowledge while also learning from others.
               </p>
               <p>
-              In my career, I&apos;ve had the opportunity to work on many challenging projects, but one of my proudest achievements was at battleface. As the lead frontend developer and senior Angular expert, I architected a new micro-frontend architecture using the latest frontend tools and best practices in Nx, and Module Federation API. This solution effectively addressed maintainability and scalability issues within the company, providing a more efficient and streamlined process that positively impacted the entire engineering organization.
+                In my career, I&apos;ve had the opportunity to work on many challenging projects, but one of my proudest achievements was at battleface. As the lead frontend developer and senior Angular expert, I architected a new micro-frontend architecture using the latest frontend tools and best practices in Nx, and Module Federation API. This solution effectively addressed maintainability and scalability issues within the company, providing a more efficient and streamlined process that positively impacted the entire engineering organization.
               </p>
               <p>
-              Another proud technical accomplishment of mine was during my tenure at COTA Healthcare, where I designed and built the abstractor grading platform. The platform allows users to easily compare and grade large, complex datasets, which was previously done using excel sheets. This innovative solution transformed the way our users worked with data, improving accuracy and efficiency while also providing valuable insights to drive business decisions.
+                Another proud technical accomplishment of mine was during my tenure at COTA Healthcare, where I designed and built the abstractor grading platform. The platform allows users to easily compare and grade large, complex datasets, which was previously done using excel sheets. This innovative solution transformed the way our users worked with data, improving accuracy and efficiency while also providing valuable insights to drive business decisions.
               </p>
               <p>
-              As I continue to advance in my career, I remain committed to learning new technologies and staying up-to-date with industry trends. I am eager to contribute to the success of future projects, collaborate with talented professionals, and be an active member of the tech community. My focus on leadership, continuous improvement, and giving back has shaped the professional I am today, and I look forward to the opportunities and challenges that lie ahead.
+                As I continue to advance in my career, I remain committed to learning new technologies and staying up-to-date with industry trends. I am eager to contribute to the success of future projects, collaborate with talented professionals, and be an active member of the tech community. My focus on leadership, continuous improvement, and giving back has shaped the professional I am today, and I look forward to the opportunities and challenges that lie ahead.
               </p>
             </div>
           </div>

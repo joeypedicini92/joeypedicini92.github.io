@@ -13,8 +13,9 @@ export default function ThankYou() {
           content="Welcome to my blog."
         />
       </Head>
-      <SimpleLayout marginTop={false}>
-        <iframe style={{width: '100%', height: 'calc(70vh)'}} src="https://app.bonjournl.com/public/824514e2-5960-4e2c-8b60-2f54bf3a4d86"></iframe>
+      <SimpleLayout title="Blog"
+        intro="Welcome to my blog. I built this blog called Bonjournl to help me to make a daily habit of journaling. This is a random collection of thoughts, some related to software development, some not related to anything.">
+        <iframe style={{ width: '100%', height: 'calc(100vh)' }} src="https://app.bonjournl.com/public/824514e2-5960-4e2c-8b60-2f54bf3a4d86"></iframe>
       </SimpleLayout>
     </>
   )

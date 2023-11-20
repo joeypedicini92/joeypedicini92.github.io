@@ -11,6 +11,20 @@ import logoFridgeraider from '@/images/logos/fridgeraider.png'
 
 const projects = [
   {
+    name: 'Pretzel (work in progress)',
+    description:
+      'Working with a co-founder on Y-Combinator creating an app for dads to meet other dads, built with React, Supabase, Chakra UI',
+    link: { href: 'https://pretzel-app.vercel.app/', label: 'Pretzel' },
+    logo: logoGithub,
+  },
+  {
+    name: 'Rhythm RPG (work in progress)',
+    description:
+      'A text-based RPG game where you have to play beats on a midi controller to fight battles, built with React, MIDI.js, WebMidi',
+    link: { href: 'https://rhythm-rpg.vercel.app/', label: 'Rhythm RPG' },
+    logo: logoGithub,
+  },
+  {
     name: 'Diplomacy AI (work in progress)',
     description:
       'A modern Diplomacy game engine and SVG-based web app to play with AI, built with Next.js, Supabase, ChatGPT.',
@@ -73,8 +87,8 @@ export default function Projects() {
         />
       </Head>
       <SimpleLayout
-        title="My Personal Contributions and Learning Experiences"
-        intro="Welcome to the projects page of my portfolio website! I'm excited to share with you some personal side projects that I've worked on during my spare time. These projects represent my curiosity, my eagerness to learn, and my passion for exploring new technologies and techniques in software development."
+        title="Projects"
+        intro="I'm excited to share with you some personal side projects that I've worked on during my spare time. These projects represent my curiosity, my eagerness to learn, and my passion for exploring new technologies and techniques in software development."
       >
         <ul
           role="list"
