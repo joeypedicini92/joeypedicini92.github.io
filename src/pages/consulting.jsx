@@ -8,6 +8,7 @@ import { useForm } from '@formspree/react';
 import { InlineWidget } from "react-calendly";
 import Head from 'next/head'
 import { SimpleLayout } from '@/components/SimpleLayout'
+import { Testimonial } from '@/components/Testimonial'
 
 function TextInput({
   label,
@@ -89,7 +90,7 @@ function ContactDetails() {
   )
 }
 
-export default function Contact() {
+export default function Consulting() {
   return (
     <>
       <Head>
@@ -101,14 +102,28 @@ export default function Contact() {
       </Head>
       <SimpleLayout
         title="Consulting"
-        intro="I am available for consulting on various projects through my company, CodeCompass, LLC. My areas of expertise include modernizing legacy applications, custom MVP development, and web application design and architecture. Schedule a call with me to discuss how I can assist you with your project."
+        intro="I am available for consulting. My areas of expertise include modernizing legacy applications, custom MVP development, and web application design and architecture. Schedule a call with me to discuss how I can assist you with your project."
       >
-        <Container className="mt-14 sm:mt-22 lg:mt-30 mb-10">
-          <div className="grid grid-cols-1 gap-x-8 gap-y-24 lg:grid-cols-2">
-            <ContactForm />
-            <ContactDetails />
-          </div>
-        </Container>
+        <div className="mb-24 grid grid-cols-1 gap-x-8 gap-y-24 lg:grid-cols-2">
+          <ContactForm />
+          <ContactDetails />
+        </div>
+        <Testimonial
+          className="mb-24"
+          client={{ name: 'Nic, The Breakfast Menu', logo: null }}
+        >
+          Joey exceeded my expectations on my mobile web project. In just one month, We had a sleek, user-friendly app complete with innovative daily notifications. Their service was personalized and attentive — truly outstanding work.
+        </Testimonial>
+        <Testimonial
+          className="mb-24"
+          client={{ name: 'Tejas, GoEB1', logo: null }}
+        >
+          I reached out to Joey for a basic prototype for my immigrant thought leadership platform. Joey was extremely responsive, and provided me a mock prototype pro-bono, without any payments, just so that I could be unblocked.
+          His wireframe diagrams were clean, extremely slick, and helped me move extremely fast. I am a great believer in working with good human beings, and Joey is one of the few I would definitely advocate for.
+          He is ethical, honest, helpful, and empathetic, and it is a pleasure to work with him and his team.
+          I strongly recommend leveraging Joey & his team for any software architecture and implementation.
+        </Testimonial>
+
       </SimpleLayout>
     </>
   )
