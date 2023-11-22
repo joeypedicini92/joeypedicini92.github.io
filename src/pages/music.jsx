@@ -61,12 +61,12 @@ export default function Projects() {
         <title>Music - Joey Pedicini</title>
         <meta
           name="description"
-          content="My Musical Endeavors."
+          content="My Musical Journey."
         />
       </Head>
       <SimpleLayout
-        title="My Musical Endeavors"
-        intro="I started playing trombone as a kid and when I first went to university I met some great dudes who had a band called Discount Tents and they were nice enough to let me make music with them. I've kept in touch with them over the years, and recently Danny helped teach me the basics of recording and mixing and playing synthesizer and guitar. I've been making music on my own since then and I'm really enjoying it. I hope you enjoy it too!"
+        title="My Musical Journey"
+        intro="I began playing the trombone as a child. When I first attended university, I had the pleasure of meeting some amazing individuals who were part of a band called Discount Tents. They graciously allowed me to join them in making music. Recently, Danny assisted me in learning the fundamentals of recording, mixing, and playing synthesizer and guitar. Since then, I have been creating music on my own and thoroughly enjoying the process. I hope you find joy in it as well!"
       >
         <iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1626327117&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true" width="100%" height="300" frameBorder="0" allow="autoplay"></iframe>
         <br></br>
@@ -75,10 +75,6 @@ export default function Projects() {
         <iframe src="https://open.spotify.com/embed/album/7kuyvK4UyvYRMG0sKFVORz?utm_source=generator" width="100%" height="352" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         <br></br>
         <iframe src="https://open.spotify.com/embed/album/3ngjJ6ayCbAAHXU2AA7ZTG?utm_source=generator" width="100%" height="352" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-        <br></br>
-        <iframe src="https://bandcamp.com/EmbeddedPlayer/album=989791973/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" width="100%" loading="lazy"><a href="https://discounttents.bandcamp.com/album/clementine">Clementine by Discount Tents</a></iframe>
-        <br></br>
-        <iframe src="https://bandcamp.com/EmbeddedPlayer/album=328204959/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" width="100%" loading="lazy"><a href="https://discounttents.bandcamp.com/album/columbus-boychoir">Columbus Boychoir by Discount Tents</a></iframe>
       </SimpleLayout>
     </>
   )
