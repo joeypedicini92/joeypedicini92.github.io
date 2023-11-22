@@ -11,57 +11,58 @@ import logoFridgeraider from '@/images/logos/fridgeraider.png'
 
 const projects = [
   {
-    name: 'Pretzel (work in progress)',
+    name: 'Initial Web UI Mock Ups for GoEB1',
     description:
-      'Working with a co-founder on Y-Combinator creating an app for dads to meet other dads, built with React, Supabase, Chakra UI',
-    link: { href: 'https://pretzel-app.vercel.app/', label: 'Pretzel' },
-    logo: logoGithub,
+      'GoEB1 aids applicants in fulfilling EB1A visa requirements by providing a comprehensive platform with several features. These include profile evaluation, recommendation, document management, and opportunity ingestion. I collaborated with the founder to create initial mock-ups for the web UI.',
+    link: { href: '/goeb1_visily_design.pdf', label: 'GoEB1 Mock Ups' },
+    logo: logoCodeCompass,
   },
   {
-    name: 'Rhythm RPG (work in progress)',
-    description:
-      'A text-based RPG game where you have to play beats on a midi controller to fight battles, built with React, MIDI.js, WebMidi',
-    link: { href: 'https://rhythm-rpg.vercel.app/', label: 'Rhythm RPG' },
-    logo: logoGithub,
+    name: 'Breakfast Menu',
+    description: 'Breakfast Menu is a simple tool that helps you build a consistent morning routine. I developed a quick proof-of-concept to test the idea. I then worked with the Nic to design and build the MVP based on his specifications, which included daily alerts sent to his phone which I was able to develop using Firebase and Web Notificaitons. PWA Built with Next.js, Firebase, and Tailwind.',
+    link: { href: 'https://breakfast-menu.vercel.app/', label: 'Breakfast Menu' },
+    logo: logoCodeCompass
   },
   {
-    name: 'Diplomacy AI (work in progress)',
-    description:
-      'A modern Diplomacy game engine and SVG-based web app to play with AI, built with Next.js, Supabase, ChatGPT.',
-    link: { href: 'https://diplomacy-ai.vercel.app/', label: 'Diplomacy AI' },
-    logo: logoGithub,
+    name: 'Africa Bridge Data Collection',
+    description: 'Africa Bridge is a nonprofit, rural economic development organization. I set up the infrastructure to manage data collection from rural Tanzania to be analyzed in Portland, Oregon. This involved offline dynamic forms built with ODK Collect, an open-source Android project, as well as an ODK server built on Google App Engine to ingest the data and serve the forms. Built with ODK Collect.',
+    link: { href: 'https://africabridge.org/our-impact/', label: 'Kisondela Wellbeing Survey 2021' },
+    logo: logoAfricaBridge
   },
   {
     name: 'Fridgeraider',
     description:
-      'A web app for generating new recipes based off ingredients in your kitchen, with added tools to help track food expiration dates and reduce food waste. Contributed to by a team of devs at CodeCompass. PWA Built with Next.js, ChatGPT and Firebase.',
+      'This is a project that I collaborated on with my mentee, Jacob, after he completed his mentorship. It is a web app that generates new recipes based on the ingredients available in your kitchen. The app also includes tools to help track food expiration dates and reduce food waste. It is a progressive web app (PWA) built with Next.js, ChatGPT, and Firebase.',
     link: { href: 'https://app.fridgeraider.org/', label: 'Fridgeraider' },
     logo: logoFridgeraider,
   },
   {
     name: 'Bonjournl',
     description:
-      'A community built around daily journaling, with a focus on mental health. PWA Built with Angular, Tailwind and Supabase.',
+      'This is a project I built for myself during a year of self-improvement, with the goal of developing a daily journaling habit. It includes social features and end-to-end encryption. You can see it in action on the "Blog" page. The project is a Progressive Web App (PWA) built using Angular, Tailwind, and Supabase.',
     link: { href: 'https://bonjournl.com/', label: 'Bonjournl' },
     logo: logoComunidaddies,
   },
   {
-    name: 'Breakfast Menu',
-    description: 'A simple morning routine picker made for a client. Receive a notification each morning using web push notifications. PWA Built with Next.js, Firebase, and Tailwind.',
-    link: { href: 'https://breakfast-menu.vercel.app/', label: 'Breakfast Menu' },
-    logo: logoCodeCompass
+    name: 'Pretzel (work in progress)',
+    description:
+      'Currently working with a co-founder to create an app for dads to meet other dads. The Peanut app for dads. Built with React, Supabase, Chakra UI.',
+    link: { href: 'https://pretzel-app.vercel.app/', label: 'Pretzel' },
+    logo: logoGithub,
   },
   {
-    name: 'Africa Bridge Data Collection',
-    description: 'A data collection app for the non-profit Africa Bridge which supported their independent program audit report in 2021. Built with ODK Collect.',
-    link: { href: 'https://africabridge.org/our-impact/', label: 'Kisondela Wellbeing Survey 2021' },
-    logo: logoAfricaBridge
+    name: 'Rhythm RPG (work in progress)',
+    description:
+      'An experimental project that my friend Danny came up with. A text-based RPG game where you have to play beats on a midi controller to fight battles. Built with React, MIDI.js, WebMidi.',
+    link: { href: 'https://rhythm-rpg.vercel.app/', label: 'Rhythm RPG' },
+    logo: logoGithub,
   },
   {
-    name: 'Angular Module Federation Starter',
-    description: 'A starter repo for Angular projects with Module Federation which laid the groundwork for a microapp repo at battleface. Built with Nx.',
-    link: { href: 'https://github.com/joeypedicini92/angular-mfe-starter', label: 'github.com' },
-    logo: logoGithub
+    name: 'Diplomacy AI (work in progress)',
+    description:
+      'This is a personal project of mine that I started over 5 years ago with Ember and Ruby, but am working on rewriting it. A modern Diplomacy game engine and SVG-based web app to play with AI, built with Next.js, Supabase, ChatGPT.',
+    link: { href: 'https://diplomacy-ai.vercel.app/', label: 'Diplomacy AI' },
+    logo: logoGithub,
   }
 ]
 
@@ -88,7 +89,7 @@ export default function Projects() {
       </Head>
       <SimpleLayout
         title="Projects"
-        intro="I'm excited to share with you some personal side projects that I've worked on during my spare time. These projects represent my curiosity, my eagerness to learn, and my passion for exploring new technologies and techniques in software development."
+        intro="I'm excited to share some personal side projects that I've worked on during my spare time, as well as projects I've built for clients. These projects reflect my curiosity, eagerness to learn, and passion for exploring new technologies and techniques in software development."
       >
         <ul
           role="list"
