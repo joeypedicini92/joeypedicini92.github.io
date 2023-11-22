@@ -245,9 +245,17 @@ export default function Home() {
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
             Innovating with Empathy and Expertise
           </h1>
-          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+          <p className="mt-6 mb-6 text-base text-zinc-600 dark:text-zinc-400">
             I’m Joey Pedicini, a freelance software developer based in Columbus,
-            Ohio.
+            Ohio. I specialize in building high-quality websites and progressive web applications
+            with React, Next.js, and Tailwind CSS. I also have experience with
+            Angular, Ember, Nodejs, AWS, GCP, Supabase and Firebase.
+          </p><p>I am
+            currently available for freelance work, career coaching, and consulting. If you have a project that
+            you want to get started, think you need my help with something or
+            just fancy saying hey, then get in touch.
+
+
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
@@ -264,9 +272,6 @@ export default function Home() {
         </div>
       </Container>
       <Photos />
-      <Container className="mt-24 md:mt-28">
-        <Resume />
-      </Container>
     </>
   )
 }

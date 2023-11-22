@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Image from 'next/future/image'
 import Head from 'next/head'
 import Link from 'next/link'
@@ -65,22 +66,31 @@ export default function About() {
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p className="text-lg text-gray-500">
-                As a dedicated software engineer with over ten years of experience in the industry, I&apos;ve been fortunate enough to work in a variety of roles. This diverse background has given me the opportunity to develop a comprehensive skill set and learn from many talented colleagues. I am always looking for ways to grow, learn, and contribute positively to the tech industry, and I believe that collaboration and continuous improvement are key to success.
+                Recently I led the frontend development for Amazon’s initiative to integrate One Medical membership into the Amazon Prime benefits. Not too long into the project, I found out I would need to relocate my family to Seattle or resign. Despite the stress and pressure from this situation, I fulfilled my responsibilities and completed the project on time. I hoped that my strong effort would give me some room for negotiation, especially since I had previously negotiated a remote position when I first joined Amazon in early 2022. Unfortunately, Amazon was unwilling to budge on their policy, and so I resigned.
               </p>
               <p>
-                One of the most rewarding aspects of my career has been the opportunity to lead and mentor others. I have had the privilege of guiding teams through complex projects, fostering a culture of collaboration and mutual learning. By emphasizing the importance of open communication and the sharing of ideas, I have been able to help create environments where everyone can thrive and excel.
+                I walked away from that experience with a strong desire to take a leap of faith on my own business, and so I am now excited to offer my time, experience, and skills from 11 years in software development. I have worked with early stage startups, to more established startups, as well as large enterprises such as Amazon and JPMorgan Chase. I have experience with a wide range of technologies, but I specialize in frontend development. I have experience leading development teams, and a passion for cultivating future industry talent. I look forward to working with you!
               </p>
               <p>
-                My passion for technology extends beyond the workplace. I firmly believe in giving back to the community and have been involved in several volunteer initiatives throughout the years. I have helped set up mobile data collection solutions in Tanzania, mentored students in computer science clubs, and taught high school computer science classes via Skype. These experiences have been incredibly fulfilling, allowing me to share my knowledge while also learning from others.
+                I’m available for freelance software development work. Contact me if you need someone who:
+                <ul className="list-disc ml-5">
+                  <li>Has a proven track record of taking projects from ideation to completion.</li>
+                  <li>Has experience leading development teams and cultivating tech talent.</li>
+                  <li>Can find the right balance between cost, scope, and time.</li>
+                  <li>Can effectively communicate with both technical and non-technical stakeholders.</li>
+                  <li>Understands that each project and team is unique when it comes to defining processes.</li>
+                </ul>
               </p>
               <p>
-                In my career, I&apos;ve had the opportunity to work on many challenging projects, but one of my proudest achievements was at battleface. As the lead frontend developer and senior Angular expert, I architected a new micro-frontend architecture using the latest frontend tools and best practices in Nx, and Module Federation API. This solution effectively addressed maintainability and scalability issues within the company, providing a more efficient and streamlined process that positively impacted the entire engineering organization.
-              </p>
-              <p>
-                Another proud technical accomplishment of mine was during my tenure at COTA Healthcare, where I designed and built the abstractor grading platform. The platform allows users to easily compare and grade large, complex datasets, which was previously done using excel sheets. This innovative solution transformed the way our users worked with data, improving accuracy and efficiency while also providing valuable insights to drive business decisions.
-              </p>
-              <p>
-                As I continue to advance in my career, I remain committed to learning new technologies and staying up-to-date with industry trends. I am eager to contribute to the success of future projects, collaborate with talented professionals, and be an active member of the tech community. My focus on leadership, continuous improvement, and giving back has shaped the professional I am today, and I look forward to the opportunities and challenges that lie ahead.
+                I’m also available for monthly mentorship. Contact me if you need help with the following:
+                <ul className="list-disc ml-5">
+                  <li>Mock interviews and interview preparation.</li>
+                  <li>Resume and cover letter review.</li>
+                  <li>Building a personal portfolio.</li>
+                  <li>Navigating your software development career.</li>
+                  <li>Job search advice tailored to your specific needs.</li>
+                  <li>Access to a network of other software developers who have gone through similar experiences.</li>
+                </ul>
               </p>
             </div>
           </div>

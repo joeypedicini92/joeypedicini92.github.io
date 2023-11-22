@@ -94,15 +94,15 @@ export default function Consulting() {
   return (
     <>
       <Head>
-        <title>Consulting - Joey Pedicini</title>
+        <title>Work With Me - Joey Pedicini</title>
         <meta
           name="description"
           content="Custom MVP Development. Modernizing Legacy Applications. Web Application Design and Architecture."
         />
       </Head>
       <SimpleLayout
-        title="Consulting"
-        intro="I am available for consulting. My areas of expertise include modernizing legacy applications, custom MVP development, and web application design and architecture. Schedule a call with me to discuss how I can assist you with your project."
+        title="Code Collaborator for Hire"
+        intro="I am available for freelance work. My areas of expertise include modernizing legacy applications, custom MVP development, and web application design and architecture. Schedule a call with me to discuss how I can assist you with your project."
       >
         <div className="mb-24 grid grid-cols-1 gap-x-8 gap-y-24 lg:grid-cols-2">
           <ContactForm />
