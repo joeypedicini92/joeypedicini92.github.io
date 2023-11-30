@@ -45,7 +45,7 @@ export default function About() {
         <title>About - Joey Pedicini</title>
         <meta
           name="description"
-          content="I’m Joey Pedicini, a freelance software developer based in Columbus, Ohio."
+          content="I’m Joey Pedicini, a software developer based in Columbus, Ohio."
         />
       </Head>
       <Container className="mt-16 sm:mt-32">

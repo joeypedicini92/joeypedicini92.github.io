@@ -22,6 +22,7 @@ import logoBattleface from '@/images/logos/battleface.svg'
 import logoCOTA from '@/images/logos/cota.svg'
 import logoChase from '@/images/logos/chase.svg'
 import { formatDate } from '@/lib/formatDate'
+import { Testimonial } from '@/components/Testimonial'
 
 function MailIcon(props) {
   return (
@@ -237,25 +238,18 @@ export default function Home() {
         </title>
         <meta
           name="description"
-          content="I’m Joey Pedicini, a freelance software developer based in Columbus, Ohio."
+          content="I’m Joey Pedicini, a software developer based in Columbus, Ohio."
         />
       </Head>
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Innovating with Empathy and Expertise
+            Thank you for stopping by
           </h1>
           <p className="mt-6 mb-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Joey Pedicini, a freelance software developer based in Columbus,
-            Ohio. I specialize in building high-quality websites and progressive web applications
-            with React, Next.js, and Tailwind CSS. I also have experience with
-            Angular, Ember, Nodejs, AWS, GCP, Supabase and Firebase.
-          </p><p>I am
-            currently available for freelance work, career coaching, and consulting. If you have a project that
-            you want to get started, think you need my help with something or
-            just fancy saying hey, then get in touch.
-
-
+            I’m Joey Pedicini, a software developer based in Columbus,
+            Ohio. I specialize in building high-quality, scalable web applications.
+          </p><p className="mt-6 mb-6 text-base text-zinc-600 dark:text-zinc-400">I am currently available for work. My passion lies in leading teams to be efficient in frontend development, while also maximizing developer morale. I am dedicated to promoting mental health and wellness, and firmly believe that happy developers are productive developers. If you need an experienced frontend developer who can train your team and drive a project to completion, please contact me. I am also available for freelance work and would be thrilled to assist you in building your next project.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
@@ -272,6 +266,15 @@ export default function Home() {
         </div>
       </Container>
       <Photos />
+      <Testimonial
+        className="mb-24"
+        client={{ name: 'Tejas, GoEB1', logo: null }}
+      >
+        I reached out to Joey for a basic prototype for my immigrant thought leadership platform. Joey was extremely responsive, and provided me a mock prototype pro-bono, without any payments, just so that I could be unblocked.
+        His wireframe diagrams were clean, extremely slick, and helped me move extremely fast. I am a great believer in working with good human beings, and Joey is one of the few I would definitely advocate for.
+        He is ethical, honest, helpful, and empathetic, and it is a pleasure to work with him and his team.
+        I strongly recommend leveraging Joey & his team for any software architecture and implementation.
+      </Testimonial>
     </>
   )
 }

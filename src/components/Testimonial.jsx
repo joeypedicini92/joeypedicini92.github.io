@@ -11,14 +11,14 @@ export function Testimonial({
   return (
     <div
       className={clsx(
-        'relative isolate bg-neutral-50 py-8 sm:py-20 md:py-20',
+        'relative isolate bg-neutral-50 dark:bg-inherit py-8 sm:py-20 md:py-20',
         className,
       )}
     >
       <Container>
         <FadeIn>
-          <figure className="mx-auto max-w-4xl">
-            <blockquote className="relative font-display text-lg tracking-tight text-neutral-950">
+          <figure className="mx-auto max-w-4xl dark:text-zinc-400">
+            <blockquote className="relative font-display text-lg tracking-tight text-neutral-950 ">
               <p className="before:content-['“'] after:content-['”'] sm:before:absolute sm:before:right-full">
                 {children}
               </p>
