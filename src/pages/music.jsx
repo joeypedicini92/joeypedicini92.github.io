@@ -66,7 +66,7 @@ export default function Projects() {
       </Head>
       <SimpleLayout
         title="My Musical Journey"
-        intro="I began playing the trombone as a child. When I first attended university, I had the pleasure of meeting some amazing individuals who were part of a band called Discount Tents. They graciously allowed me to join them in making music. Recently, Danny assisted me in learning the fundamentals of recording, mixing, and playing synthesizer and guitar. Since then, I have been creating music on my own and thoroughly enjoying the process. I hope you find joy in it as well!"
+        intro="Recently, I have been learning the fundamentals of recording, mixing, and playing synthesizer and guitar and am thoroughly enjoying the process. I hope you find joy in it as well!"
       >
         <iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1626327117&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true" width="100%" height="300" frameBorder="0" allow="autoplay"></iframe>
         <br></br>
