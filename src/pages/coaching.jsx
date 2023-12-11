@@ -33,6 +33,12 @@ export default function Coaching() {
         >
           I highly recommend Joey as a coding mentor. He is respectful of his clients' time and consistently comes prepared to sessions. His guidance is spot on and he always provides helpful resources to assist with problem-solving. I am grateful for his support and expertise.
         </Testimonial>
+        <Testimonial
+          className="mb-24"
+          client={{ name: 'Jielin', logo: null }}
+        >
+          I had the privilege of being mentored by Joey, and it was a great experience working with him. His deep technical knowledge and patient guidance have significantly advanced my software development skills. Joey fosters a supportive learning environment where questions are encouraged, and with real-world project practice, he emphasizes the importance of effective communication and teamwork in Agile development. I wholeheartedly recommend Joey to anyone looking to excel in the field. Want help? Don't hesitate to reach out Joey!
+        </Testimonial>
 
       </SimpleLayout>
     </>
