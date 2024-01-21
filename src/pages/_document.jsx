@@ -51,7 +51,7 @@ export default function Document() {
           href={`${process.env.NEXT_PUBLIC_SITE_URL}/rss/feed.json`}
         />
         <link rel="icon" href="/favicon.ico" type="image/x-icon"></link>
-        <meta property="og:image" content="/public.jpg"></meta>
+        <meta property="og:image" content="https://joeypedicini92.github.io/public.jpg"></meta>
       </Head>
       <body className="flex h-full flex-col bg-zinc-50 dark:bg-black">
         <Main />
