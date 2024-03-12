@@ -7,6 +7,8 @@ import clsx from 'clsx'
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import {
+  SoundcloudIcon,
+  InstagramIcon,
   GitHubIcon,
   LinkedInIcon,
 } from '@/components/SocialIcons'
@@ -124,7 +126,7 @@ export default function Home() {
           <p className="mt-6 mb-6 text-base text-zinc-600 dark:text-zinc-400">
             I’m Joey Pedicini, a software developer based in Columbus,
             Ohio. I specialize in building high-quality, scalable web applications.
-          </p><p className="mt-6 mb-6 text-base text-zinc-600 dark:text-zinc-400">I am currently available for work. My passion lies in leading teams to be efficient in frontend development, while also maximizing developer morale. I am dedicated to promoting mental health and wellness, and firmly believe that happy developers are productive developers. If you need an experienced frontend developer who can train your team and drive a project to completion, please contact me. I am also available for freelance work and would be thrilled to assist you in building your next project.
+          </p><p className="mt-6 mb-6 text-base text-zinc-600 dark:text-zinc-400">With a passion for mentoring and teaching, I have dedicated many years to guiding young engineers and fostering their "lightbulb" moments. My professional expertise extends to 11 years of software product delivery, overcoming unique challenges, and leading projects like Amazon's One Medical integration. Since 2023, I have mentored over 20 individuals in their software development careers, helping them build their own products while enhancing their soft skills. My mission is to transform the software development industry's approach to nurturing talent, hoping to make learning more accessible and enable more visions to turn into tangible products.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
@@ -136,6 +138,16 @@ export default function Home() {
               href="https://www.linkedin.com/in/joey-p-a3343924/"
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
+            />
+            <SocialLink
+              href="https://www.instagram.com/dadbod591"
+              icon={InstagramIcon}
+              aria-label="Follow on Instagram"
+            />
+            <SocialLink
+              href="https://soundcloud.com/los-gookies"
+              icon={SoundcloudIcon}
+              aria-label="Follow on Soundcloud"
             />
           </div>
         </div>

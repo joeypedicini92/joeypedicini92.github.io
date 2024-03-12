@@ -23,6 +23,11 @@ export default function Coaching() {
         </a>
         <Testimonial
           className="mb-24 mt-6"
+          client={{ name: 'Ekaterina', logo: null }}
+        >
+Joey is a great mentor not only for newbies, but for anyone who wants to start a project and learn how to 'get things done'. I was able to benefit not only from his technical knowledge, but also from his very good product and practice orientation, which helped me to stay on track and not get thrown around by irrelevant details.        </Testimonial>
+        <Testimonial
+          className="mb-24 mt-6"
           client={{ name: 'Aurora', logo: null }}
         >
           Joey is a wonderful mentor! He is very kind and responsive when I need help. He is always open to hear me out in my career searching journey. If you are looking for a real expert in the field who is kind and ready to listen and help with your technical issues, questions or even curiosities. With joey you will find the right person.

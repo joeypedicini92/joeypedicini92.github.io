@@ -17,6 +17,7 @@ import logoAmazon from '@/images/logos/amazon.svg'
 import logoBattleface from '@/images/logos/battleface.svg'
 import logoCOTA from '@/images/logos/cota.svg'
 import logoChase from '@/images/logos/chase.svg'
+import logoCleverApply from '@/images/logos/cleverapply.png'
 
 function SocialLink({ className, href, children, icon: Icon }) {
   return (
@@ -82,14 +83,21 @@ function ArrowDownIcon(props) {
 function Resume() {
   let resume = [
     {
-      company: 'Amazon',
-      title: 'Frontend Engineer II',
-      logo: logoAmazon,
-      start: 'April 2022',
+      company: 'CleverApply',
+      title: 'Chief Technology Officer',
+      logo: logoCleverApply,
+      start: 'January 2024',
       end: {
         label: 'Present',
         dateTime: new Date().getFullYear(),
       },
+    },
+    {
+      company: 'Amazon',
+      title: 'Frontend Engineer II',
+      logo: logoAmazon,
+      start: 'April 2022',
+      end: 'February 2024',
     },
     {
       company: 'battleface',
