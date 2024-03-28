@@ -3,43 +3,55 @@ import Head from 'next/head'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import logoComunidaddies from '@/images/logos/comunidaddies.png'
-import logoGithub from '@/images/logos/github.png'
-import logoCodeCompass from '@/images/logos/codecompass.png'
-import logoAfricaBridge from '@/images/logos/africabridge.jpg'
+import logoWorld from '@/images/music/this_world_feels_like_its_falling_apart_sometimes.png'
+import logoFishing from '@/images/music/fishing_for_thoughts_from_the_sea_of_my_mind.png'
+import logoGoing from '@/images/music/going_on_3_and_31.png'
+import logoEmotional from '@/images/music/emotional_constipation.png'
+import logoClementine from '@/images/music/clementine.png'
+import logoBoychoir from '@/images/music/columbus_boychoir.png'
 
 const projects = [
   {
+    name: `This World Feels Like It's Falling Apart Sometimes`,
+    description:
+      `April 2024. The world will always feel like it's falling apart sometimes, how do you stay focused on your inner world and maintain balance there? All of the solutions to your problems already exist. It just requires knowing yourself more intimately. Not running away from the scary thoughts, not trying to numb the painful thoughts, breathing through the anxious thoughts. It's all energy. Feel the energy. Use the energy and convert it to love. And that starts by loving yourself unconditionally.`,
+    link: { href: 'https://joeypedicini.notion.site/This-World-Feels-Like-It-s-Falling-Apart-Sometimes-a2baab236a8343f8a2c766b6fef797a6?pvs=74', label: `This World Feels Like It's Falling Apart Sometimes` },
+    logo: logoWorld,
+  },
+  {
+    name: 'Fishing For Thoughts From The Sea Of My Mind',
+    description:
+      'October 2023. A collection of songs that I made while my wife and daughter were in Peru. Then I was able to join them in Peru, but I struggled to enjoy my time with them as I was very stressed about my job. I was not myself at all and made life hard on my family so I headed home to deal with work and try to figure out a way to stay remote to support the life we were trying to build between Ohio and Peru. This was necessary to bring us back to Ohio to properly close out this chapter of our lives. But it caused me a lot of anger and resentment to the company that promised me I could work remotely which was the only reason I left my job to join them.',
+    link: { href: 'https://youtube.com/playlist?list=OLAK5uy_kUwsG-e-wJ57d8XCLkDOJ_fSR9d6_X1rM&si=wgu0_rusJwUsS24T', label: 'Fishing For Thoughts From The Sea Of My Mind' },
+    logo: logoFishing,
+  },
+  {
     name: 'Going on 3 and 31',
     description:
-      'A collaboration with my daughter for her 3rd birthday and my 31st birthday.',
-    link: { href: 'https://bonjournl.com/', label: 'Bonjournl' },
-    logo: logoComunidaddies,
+      'May 2023. An experimental album of songs that incorporate my daughter in them. A mix of soundscapes, recordings of her singing, and my musical progression.',
+    link: { href: 'https://youtube.com/playlist?list=OLAK5uy_nW_eCXV7nM-v18sqdrWWZMxVman_N3ptE&si=68NHUDBsOBthf9XV', label: 'Going on 3 and 31' },
+    logo: logoGoing,
   },
   {
-    name: 'CodeCompass',
-    description: 'A mentorship platform for software engineers. Built with Next.js.',
-    link: { href: 'https://www.codecompass.org/', label: 'CodeCompass' },
-    logo: logoCodeCompass
-  },
-  {
-    name: 'Africa Bridge Data Collection',
-    description: 'A data collection app for the non-profit Africa Bridge which supported their independent program audit report in 2021. Built with ODK Collect.',
-    link: { href: 'https://africabridge.aplos.org/Page/20195', label: 'Kisondela Wellbeing Survey' },
-    logo: logoAfricaBridge
-  },
-  {
-    name: 'Angular Module Federation Starter',
-    description: 'A starter repo for Angular projects with Module Federation which laid the groundwork for a microapp repo at battleface. Built with Nx.',
-    link: { href: 'https://github.com/joeypedicini92/angular-mfe-starter', label: 'github.com' },
-    logo: logoGithub
-  },
-  {
-    name: 'Diplomacy',
+    name: 'Emotional Constipation',
     description:
-      'A modern Diplomacy game engine and SVG-based web app, built with Ember, Ruby and Firebase.',
-    link: { href: 'https://github.com/joeypedicini92/diplomacy', label: 'github.com' },
-    logo: logoGithub,
+      'May 2023. My first album of songs that I made to deal with some difficult emotions I was facing.',
+    link: { href: 'https://youtube.com/playlist?list=OLAK5uy_m4-s5ERtDIqYhiKwciY9p0moIG_kaunEE&si=lEkWc0K5cWtEtfQh', label: 'Emotional Constipation' },
+    logo: logoEmotional,
+  },
+  {
+    name: 'Clementine - Discount Tents',
+    description:
+      'August 2015. 2nd album that I played trombone on. Folk Punk music from Columbus, Ohio.',
+    link: { href: 'https://discounttents.bandcamp.com/album/clementine', label: 'Clementine - Discount Tents' },
+    logo: logoClementine,
+  },
+  {
+    name: 'Columbus Boychoir - Discount Tents',
+    description:
+      'November 2012. 1st album that I played trombone on. Folk Punk music from Columbus, Ohio.',
+    link: { href: 'https://discounttents.bandcamp.com/album/columbus-boychoir', label: 'Columbus Boychoir - Discount Tents' },
+    logo: logoBoychoir,
   },
 ]
 
@@ -68,13 +80,31 @@ export default function Projects() {
         title="My Musical Journey"
         intro="Recently, I have been learning the fundamentals of recording, mixing, and playing synthesizer and guitar and am thoroughly enjoying the process. I hope you find joy in it as well!"
       >
-        <iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1626327117&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true" width="100%" height="300" frameBorder="0" allow="autoplay"></iframe>
-        <br></br>
-        <iframe src="https://open.spotify.com/embed/album/7pKO6J6HeAcj5EhOD9Aj5C?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-        <br></br>
-        <iframe src="https://open.spotify.com/embed/album/7kuyvK4UyvYRMG0sKFVORz?utm_source=generator" width="100%" height="352" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-        <br></br>
-        <iframe src="https://open.spotify.com/embed/album/3ngjJ6ayCbAAHXU2AA7ZTG?utm_source=generator" width="100%" height="352" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <ul
+          role="list"
+          className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
+        >
+          {projects.map((project) => (
+            <Card as="li" key={project.name}>
+              <div className="relative z-10 flex items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+                <Image
+                  src={project.logo}
+                  alt=""
+                  className=""
+                  unoptimized
+                />
+              </div>
+              <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
+                <Card.Link href={project.link.href}>{project.name}</Card.Link>
+              </h2>
+              <Card.Description>{project.description}</Card.Description>
+              <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
+                <LinkIcon className="h-6 w-6 flex-none" />
+                <span className="ml-2">{project.link.label}</span>
+              </p>
+            </Card>
+          ))}
+        </ul>
       </SimpleLayout>
     </>
   )

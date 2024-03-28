@@ -97,7 +97,7 @@ export default function Consulting() {
         />
       </Head>
       <SimpleLayout
-        title="Code Collaborator for Hire"
+        title="Get in touch with me"
         intro="Schedule a call with me to discuss how I can assist you with your project."
       >
         <div className="mb-24 gap-x-8 gap-y-24 lg:grid-cols-2">

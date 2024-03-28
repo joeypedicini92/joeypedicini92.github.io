@@ -11,6 +11,7 @@ import {
   InstagramIcon,
   GitHubIcon,
   LinkedInIcon,
+  YoutubeIcon,
 } from '@/components/SocialIcons'
 import image1 from '@/images/photos/image-1.jpg'
 import image2 from '@/images/photos/image-2.jpg'
@@ -148,6 +149,11 @@ export default function Home() {
               href="https://soundcloud.com/los-gookies"
               icon={SoundcloudIcon}
               aria-label="Follow on Soundcloud"
+            />
+            <SocialLink
+              href="https://www.youtube.com/@dadbod591"
+              icon={YoutubeIcon}
+              aria-label="Follow on Youtube"
             />
           </div>
         </div>

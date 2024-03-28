@@ -10,6 +10,7 @@ import {
   InstagramIcon,
   GitHubIcon,
   LinkedInIcon,
+  YoutubeIcon
 } from '@/components/SocialIcons'
 import portraitImage from '@/images/portrait.jpg'
 import { Button } from '@/components/Button'
@@ -233,6 +234,13 @@ export default function About() {
                 className="mt-4"
               >
                 Follow on Instagram
+              </SocialLink>
+              <SocialLink
+                href="https://www.youtube.com/@dadbod591"
+                icon={YoutubeIcon}
+                className="mt-4"
+              >
+                Follow on Youtube
               </SocialLink>
               <SocialLink
                 href="https://soundcloud.com/los-gookies"
