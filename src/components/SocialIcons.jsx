@@ -44,3 +44,17 @@ export function YoutubeIcon(props) {
     </svg>
   )
 }
+
+export function BonjournlIcon(props) {
+  // need an svg that is an infinity sign
+  return (
+<svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
+  <circle cx="12" cy="12" r="9" fill="gray" />
+
+  <path d="M16,12 C16,14.209139 14.209139,16 12,16 C9.790861,16 8,14.209139 8,12 C8,9.790861 9.790861,8 12,8 C14.209139,8 16,9.790861 16,12 Z" fill="white" />
+</svg>
+
+
+  )
+}
+

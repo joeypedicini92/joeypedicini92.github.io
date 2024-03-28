@@ -10,7 +10,8 @@ import {
   InstagramIcon,
   GitHubIcon,
   LinkedInIcon,
-  YoutubeIcon
+  YoutubeIcon,
+  BonjournlIcon
 } from '@/components/SocialIcons'
 import portraitImage from '@/images/portrait.jpg'
 import { Button } from '@/components/Button'
@@ -262,6 +263,13 @@ export default function About() {
                 className="mt-4"
               >
                 Follow on LinkedIn
+              </SocialLink>
+              <SocialLink
+                href="https://app.bonjournl.com/public/824514e2-5960-4e2c-8b60-2f54bf3a4d86"
+                icon={BonjournlIcon}
+                className="mt-4"
+              >
+                Follow on Bonjournl
               </SocialLink>
               <SocialLink
                 href="mailto:joey.pedicini@gmail.com"

@@ -12,6 +12,7 @@ import {
   GitHubIcon,
   LinkedInIcon,
   YoutubeIcon,
+  BonjournlIcon,
 } from '@/components/SocialIcons'
 import image1 from '@/images/photos/image-1.jpg'
 import image2 from '@/images/photos/image-2.jpg'
@@ -154,6 +155,11 @@ export default function Home() {
               href="https://www.youtube.com/@dadbod591"
               icon={YoutubeIcon}
               aria-label="Follow on Youtube"
+            />
+            <SocialLink
+              href="https://app.bonjournl.com/public/824514e2-5960-4e2c-8b60-2f54bf3a4d86"
+              icon={BonjournlIcon}
+              aria-label="Follow on Bonjournl"
             />
           </div>
         </div>
