@@ -93,12 +93,12 @@ export default function Consulting() {
         <title>Work With Me - Joey Pedicini</title>
         <meta
           name="description"
-          content="Web Application Design and Architecture."
+          content="Software development coaching."
         />
       </Head>
       <SimpleLayout
         title="Get in touch with me"
-        intro="Schedule a call with me to discuss how I can assist you with your project."
+        intro="Schedule a call with me to discuss how I can assist you."
       >
         <div className="mb-24 gap-x-8 gap-y-24 lg:grid-cols-2">
           <ContactDetails />

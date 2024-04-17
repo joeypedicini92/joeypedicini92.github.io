@@ -89,7 +89,7 @@ export default function Projects() {
       </Head>
       <SimpleLayout
         title="Projects"
-        intro="I'm excited to share some personal side projects that I've worked on during my spare time, as well as projects I've built for clients. These projects reflect my curiosity, eagerness to learn, and passion for exploring new technologies and techniques in software development."
+        intro="I'm excited to share some side projects that I've worked on during my spare time. These projects reflect my curiosity, eagerness to learn, and passion for exploring new technologies and techniques in software development."
       >
         <ul
           role="list"

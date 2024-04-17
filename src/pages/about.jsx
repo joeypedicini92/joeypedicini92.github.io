@@ -205,24 +205,32 @@ export default function About() {
                 I walked away from that experience with a strong desire to take a leap of faith on my own business, and so I am now excited to offer my time, experience, and skills from 11 years in software development. I have worked with early stage startups, to more established startups, as well as large enterprises such as Amazon and JPMorgan Chase. I have experience with a wide range of technologies, but I specialize in frontend development. I have experience leading development teams, and a passion for cultivating future industry talent. I look forward to working with you!
               </p>
               <p>
-                I’m available for freelance software development work. Contact me if you need someone who:
+                Are you an entrepreneur struggling to scale your technology product? Reach out if you want to:
                 <ul className="list-disc ml-5">
-                  <li>Has a proven track record of taking projects from ideation to completion.</li>
-                  <li>Has experience leading development teams and cultivating tech talent.</li>
-                  <li>Can find the right balance between cost, scope, and time.</li>
-                  <li>Can effectively communicate with both technical and non-technical stakeholders.</li>
-                  <li>Understands that each project and team is unique when it comes to defining processes.</li>
+                  <li>Make confident technical decisions.</li>
+                  <li>Streamline project management.</li>
+                  <li>Produce better architected solutions that are capable of scale.</li>
+                  <li>Build more reliable software.</li>
+                  <li>Reduce development risk.</li>
+                  <li>Adapt code rapidly.</li>
+                  <li>Serve clients better.</li>
+                  <li>Create higher value products.</li>
+                  <li>Earn more money.</li>
+                  <li>Save time.</li>
+                  <li>Free up bandwidth to focus on the work that you love.</li>
                 </ul>
               </p>
               <p>
-                I’m also available for monthly mentorship. Contact me if you need help with the following:
+              Are you an engineering leader struggling to get the most out of your development team? Contact me if you are looking to have:
                 <ul className="list-disc ml-5">
-                  <li>Mock interviews and interview preparation.</li>
-                  <li>Resume and cover letter review.</li>
-                  <li>Building a personal portfolio.</li>
-                  <li>Navigating your software development career.</li>
-                  <li>Job search advice tailored to your specific needs.</li>
-                  <li>Access to a network of other software developers who have gone through similar experiences.</li>
+                  <li>A motivated team that follows best practices for development and project management.</li>
+                  <li>A reduction in turnover as developers keep pace with company growth.</li>
+                  <li>A decreased need to hire additional tech talent.</li>
+                  <li>The ability to promote from within.</li>
+                  <li>Increased developer engagement and loyalty.</li>
+                  <li>Enhanced team productivity.</li>
+                  <li>Higher quality output.</li>
+                  <li>Happier clients.</li>
                 </ul>
               </p>
             </div>
@@ -230,7 +238,7 @@ export default function About() {
           <div className="lg:pl-20">
             <ul role="list">
               <SocialLink
-                href="https://www.instagram.com/dadbod591"
+                href="https://www.instagram.com/holistic_cto"
                 icon={InstagramIcon}
                 className="mt-4"
               >

@@ -113,11 +113,11 @@ export default function Home() {
     <>
       <Head>
         <title>
-          Joey Pedicini - Software developer
+          Joey Pedicini - CTO
         </title>
         <meta
           name="description"
-          content="I’m Joey Pedicini, a software developer based in Columbus, Ohio."
+          content="I’m Joey Pedicini, a CTO and software development coach based in Columbus, Ohio."
         />
       </Head>
       <Container className="mt-9">
@@ -126,9 +126,9 @@ export default function Home() {
             Thank you for stopping by
           </h1>
           <p className="mt-6 mb-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Joey Pedicini, a software developer based in Columbus,
-            Ohio. I specialize in building high-quality, scalable web applications.
-          </p><p className="mt-6 mb-6 text-base text-zinc-600 dark:text-zinc-400">With a passion for mentoring and teaching, I have dedicated many years to guiding young engineers and fostering their "lightbulb" moments. My professional expertise extends to 11 years of software product delivery, overcoming unique challenges, and leading projects like Amazon's One Medical integration. Since 2023, I have mentored over 20 individuals in their software development careers, helping them build their own products while enhancing their soft skills. My mission is to transform the software development industry's approach to nurturing talent, hoping to make learning more accessible and enable more visions to turn into tangible products.
+            I’m Joey Pedicini, a CTO and software development coach based in Columbus,
+            Ohio. I'm looking to bring more humanity into the tech world.
+          </p><p className="mt-6 mb-6 text-base text-zinc-600 dark:text-zinc-400">I believe that strong tech leadership goes beyond technical expertise. It's about building a cohesive and motivated team that thrives on best practices, continuous learning, and a shared passion for delivering high-quality software. My coaching empowers engineering leaders to cultivate such a team, leading to increased productivity, developer engagement, and ultimately, happier clients.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
@@ -142,7 +142,7 @@ export default function Home() {
               icon={LinkedInIcon}
             />
             <SocialLink
-              href="https://www.instagram.com/dadbod591"
+              href="https://www.instagram.com/holistic_cto"
               icon={InstagramIcon}
               aria-label="Follow on Instagram"
             />
@@ -165,30 +165,6 @@ export default function Home() {
         </div>
       </Container>
       <Photos />
-      <Container className="mt-9">
-        <h2 className="text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-4xl">
-          Testimonials
-        </h2>
-        <Testimonial
-          className={"mb-24 mt-6"}
-          client={{ name: 'Nic, The Breakfast Menu', logo: null }}
-        >
-          Joey made my very first foray into development a total breeze. I came to him with little more than an idea, but Joey was able to elicit the right details from me to get us moving down the runway immediately. Faster than I ever expected, he whipped up a proof of concept that inspired confidence and allowed me to iterate and improve the project in ways that I otherwise wouldn't have discovered.
-          <br></br><br></br>
-          From the get-go, Joey was an asset. He took the project on as his own and expertly guided me through the noise and confusion of building our MVP. The process felt clean and highly cost-effective due to Joey's experience, discernment, and skillset in software development as well as plain-language communication.
-          <br></br><br></br>
-          Congrats! You've found your guy.
-        </Testimonial>
-        <Testimonial
-          className={"mb-24 mt-6"}
-          client={{ name: 'Tejas, GoEB1', logo: null }}
-        >
-          I reached out to Joey for a basic prototype for my immigrant thought leadership platform. Joey was extremely responsive, and provided me a mock prototype pro-bono, without any payments, just so that I could be unblocked.
-          His wireframe diagrams were clean, extremely slick, and helped me move extremely fast. I am a great believer in working with good human beings, and Joey is one of the few I would definitely advocate for.
-          He is ethical, honest, helpful, and empathetic, and it is a pleasure to work with him and his team.
-          I strongly recommend leveraging Joey & his team for any software architecture and implementation.
-        </Testimonial>
-      </Container>
     </>
   )
 }

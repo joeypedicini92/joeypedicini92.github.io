@@ -14,8 +14,7 @@ export default function ThankYou() {
         />
       </Head>
       <SimpleLayout title="Bonjournl - A Collection of Thoughts"
-        intro="Welcome to my blog! I created this blog called Bonjournl to cultivate a daily journaling habit. My vision for Bonjournl is to be a unique social media app that prioritizes personal writing. You'll have the choice to share selected journal entries or thoughts with the community. While the future is uncertain, for now, Bonjournl serves as my personal blog and journal.">
-        <a href="https://bonjournl.com" target="_blank" rel="noreferrer">View Bonjournl</a>
+        intro="I created this blog called Bonjournl to cultivate a daily journaling habit. I write about topics ranging from software development, mental health, philosophy, spirituality, fatherhood, marriage, and everything in between.">
         <iframe style={{ width: '100%', height: 'calc(100vh)' }} src="https://app.bonjournl.com/public/824514e2-5960-4e2c-8b60-2f54bf3a4d86"></iframe>
       </SimpleLayout>
     </>

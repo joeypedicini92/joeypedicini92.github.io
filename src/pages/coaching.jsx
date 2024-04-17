@@ -8,19 +8,44 @@ export default function Coaching() {
   return (
     <>
       <Head>
-        <title>Mentorship - Joey Pedicini</title>
+        <title>Coaching - Joey Pedicini</title>
         <meta
-          name="Career Mentorship"
-          content="Software Development Career Mentorship."
+          name="Software Development Coaching."
+          content="Software Development Coaching."
         />
       </Head>
       <SimpleLayout
-        title="Career Mentorship"
-        intro="I have been offering career mentorship for software developers since February 2023 on MentorCruise. I have helped developers land their first job in the industry with 100% success rate. Contact me on MentorCruise to find out how I can help you achieve your career goals!"
+        title="Software Development Coaching"
+        intro="I guide entrepreneurs and engineering leaders like you to build high-performing software development teams by fostering technical growth, optimizing project management, and reducing development risk. This leads to scalable, reliable software that helps you serve clients better, create higher-value products, and ultimately, increase your bottom line."
       >
         <a href="https://mentorcruise.com/mentor/joeypedicini/">
           <img src="https://cdn.mentorcruise.com/img/banner/navy-booking-badge.svg" width="240" alt="MentorCruise"></img>
         </a>
+        <Testimonial
+          className={"mb-24 mt-6"}
+          client={{ name: 'Nic', logo: null }}
+        >
+          Joey made my very first foray into development a total breeze. I came to him with little more than an idea, but Joey was able to elicit the right details from me to get us moving down the runway immediately. Faster than I ever expected, he whipped up a proof of concept that inspired confidence and allowed me to iterate and improve the project in ways that I otherwise wouldn't have discovered.
+          <br></br><br></br>
+          From the get-go, Joey was an asset. He took the project on as his own and expertly guided me through the noise and confusion of building our MVP. The process felt clean and highly cost-effective due to Joey's experience, discernment, and skillset in software development as well as plain-language communication.
+          <br></br><br></br>
+          Congrats! You've found your guy.
+        </Testimonial>
+        <Testimonial
+          className={"mb-24 mt-6"}
+          client={{ name: 'Tejas', logo: null }}
+        >
+          I reached out to Joey for a basic prototype for my immigrant thought leadership platform. Joey was extremely responsive, and provided me a mock prototype pro-bono, without any payments, just so that I could be unblocked.
+          His wireframe diagrams were clean, extremely slick, and helped me move extremely fast. I am a great believer in working with good human beings, and Joey is one of the few I would definitely advocate for.
+          He is ethical, honest, helpful, and empathetic, and it is a pleasure to work with him and his team.
+          I strongly recommend leveraging Joey & his team for any software architecture and implementation.
+        </Testimonial>
+        <Testimonial
+          className="mb-24 mt-6"
+          client={{ name: 'Davide', logo: null }}
+        >
+          Joey helped me switch my career to Web Development, he's an amazing mentor. He gave me great advice on how to enhance my portfolio website, improving my CV, how to bring out my best potential at jobs interviews and managing my personal projects. Plus, he's really friendly and easy to talk to. Thanks to him, I succeded in finding a great job. I highly recommend him to anyone looking for career guidance!
+        </Testimonial>
         <Testimonial
           className="mb-24 mt-6"
           client={{ name: 'Ekaterina', logo: null }}
