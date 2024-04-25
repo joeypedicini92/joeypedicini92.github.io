@@ -1,109 +1,139 @@
 'use client'
-import { useId } from 'react'
-
-import { Button } from '@/components/Button'
-import { Container } from '@/components/Container'
-import { FadeIn } from '@/components/FadeIn'
-import { useForm } from '@formspree/react';
-import { InlineWidget } from "react-calendly";
 import Head from 'next/head'
+
 import { SimpleLayout } from '@/components/SimpleLayout'
 import { Testimonial } from '@/components/Testimonial'
-
-function TextInput({
-  label,
-  ...props
-}) {
-  let id = useId()
-
-  return (
-    <div className="group relative z-0 transition-all focus-within:z-10">
-      <input
-        type="text"
-        id={id}
-        {...props}
-        placeholder=" "
-        className="peer block w-full border border-neutral-300 bg-transparent px-6 pb-4 pt-12 text-base/6 text-neutral-950 ring-4 ring-transparent transition focus:border-neutral-950 focus:outline-none focus:ring-neutral-950/5 group-first:rounded-t-2xl group-last:rounded-b-2xl"
-      />
-      <label
-        htmlFor={id}
-        className="pointer-events-none absolute left-6 top-1/2 -mt-3 origin-left text-base/6 text-neutral-500 transition-all duration-200 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:font-semibold peer-focus:text-neutral-950 peer-[:not(:placeholder-shown)]:-translate-y-4 peer-[:not(:placeholder-shown)]:scale-75 peer-[:not(:placeholder-shown)]:font-semibold peer-[:not(:placeholder-shown)]:text-neutral-950"
-      >
-        {label}
-      </label>
-    </div>
-  )
-}
-
-function ContactForm() {
-  const [state, handleSubmit] = useForm('mlekqpby');
-  if (state.succeeded) {
-    return <p>Thanks! We look forward to chatting with you on your project soon!</p>;
-  }
-  const errors = state.errors
-  return (
-    <FadeIn className="lg:order-last">
-      <form onSubmit={handleSubmit} method="POST">
-        <h2 className="font-display text-base font-semibold text-neutral-950">
-          Submit a Work inquiry
-        </h2>
-        {errors && (
-          <div role="alert">
-            There was an error submitting the form
-          </div>
-        )}
-        <div className="isolate mt-6 -space-y-px rounded-2xl bg-white/50">
-          <TextInput label="Name" name="name" autoComplete="name" />
-          <TextInput
-            label="Email"
-            type="email"
-            name="email"
-            autoComplete="email"
-          />
-          <TextInput
-            label="Company"
-            name="company"
-            autoComplete="organization"
-          />
-          <TextInput label="Phone" type="tel" name="phone" autoComplete="tel" />
-          <TextInput label="Message" name="message" />
-          <TextInput label="Budget" name="budget" type="number" />
-        </div>
-        <Button disabled={state.submitting} type="submit" className="mt-10">
-          {state.submitting ? 'Submitting' : 'Let’s work together'}
-        </Button>
-      </form>
-    </FadeIn>
-  )
-}
+import { FadeIn } from '@/components/FadeIn'
+import { InlineWidget } from "react-calendly";
 
 function ContactDetails() {
   return (
     <FadeIn>
-      <InlineWidget url="https://calendly.com/joey-pedicini/30min" />
-
+      <InlineWidget url="https://calendly.com/joey-pedicini/30-minute-consultation" />
     </FadeIn>
   )
 }
+
 
 export default function Consulting() {
   return (
     <>
       <Head>
-        <title>Work With Me - Joey Pedicini</title>
+        <title>Coaching - Joey Pedicini</title>
         <meta
-          name="description"
-          content="Software development coaching."
+          name="Software Development Coaching."
+          content="Software Development Coaching."
         />
       </Head>
       <SimpleLayout
-        title="Get in touch with me"
-        intro="Schedule a call with me to discuss how I can assist you."
+        title="Software Development Coaching"
+        intro="I've been a software developer for over a decade and have worked with a variety of technologies and industries. I've helped startups and established companies build and scale their products. I've also mentored junior developers and engineering leaders. Whatever your goals are, I'm here to help you achieve them."
       >
-        <div className="mb-24 gap-x-8 gap-y-24 lg:grid-cols-2">
-          <ContactDetails />
-        </div>
-
+        <p className="mt-6 mb-6 text-base text-zinc-600 dark:text-zinc-400">
+          <h2 className="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl">Are you an entrepreneur lost in a sea of technical jargon?</h2>
+          Do you need someone to help you make confident technical decisions? Are you having trouble managing an offshore development team? Are you unsure if the product you are building will be able to scale? Are you looking to free up time to focus on the parts of running your business that you love? Together, we can create higher value products, earn more money, and serve your clients better.
+        </p>
+        <p className="mt-6 mb-6 text-base text-zinc-600 dark:text-zinc-400">
+          <h2 className="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl">Are you an engineering leader struggling to get the most out of your development team?
+          </h2>
+          Are you seeking to cultivate a motivated development team that follows industry best practices? Are you struggling to reduce turnover and improve your team's morale? Do you wish you could reduce the need to hire additional tech talent, and instead promote from within? Together we can increase developer engagement and loyalty, enhance your team's productivity, deliver higher quality output, and make your clients happier.
+        </p>
+        <p className="mt-6 mb-6 text-base text-zinc-600 dark:text-zinc-400">
+          <h2 className="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl">Are you feeling stuck in a deadend job or lost in your career?
+          </h2>
+          Are you looking to find a job that better aligns with your values? Are you struggling with burnout, impostor syndrome, or any negative emotions that come with a toxic job? Do you want to gain more flexibility in your work? Are you considering making a career change, either into technology or into a different role in technology? Together, we can make the most of your free time during the work day, learn new skills that better align with your passions and interests, build a portfolio that showcases your best work, and find a job that you love.
+        </p>
+        <p className="mt-6 mb-6 text-base text-zinc-600 dark:text-zinc-400">
+          <h2 className="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl">Are you an aspiring software developer overwhelmed with the seemingly endless amount of concepts to learn?
+          </h2>
+          Are you struggling to find a learning routine that works for you? Are you interested in building your own project but don't know where to start? Do you have problems managing your time and focus? Together we can develop a learning path that works for you, build a project that showcases your skills, and create a portfolio that will help you land your dream job.
+        </p>
+        <p className='mt-6 text-base text-zinc-600 dark:text-zinc-400'>
+        <h2 className="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl">Are you ready to hear more about how I can help you?
+          </h2>
+          Schedule a free 30 minute consultation to discuss your goals and how I can help you achieve them. I will provide you with a roadmap to success and a plan to get you there. I look forward to working with you!
+        </p>
+        <ContactDetails />
+        <h2 className="mt-12 text-2xl font-bold text-zinc-800 dark:text-zinc-200">
+          Testimonials
+        </h2>
+        <Testimonial
+          className={"mb-24 mt-6"}
+          client={{ name: 'Nic', logo: null }}
+        >
+          Joey made my very first foray into development a total breeze. I came to him with little more than an idea, but Joey was able to elicit the right details from me to get us moving down the runway immediately. Faster than I ever expected, he whipped up a proof of concept that inspired confidence and allowed me to iterate and improve the project in ways that I otherwise wouldn't have discovered.
+          <br></br><br></br>
+          From the get-go, Joey was an asset. He took the project on as his own and expertly guided me through the noise and confusion of building our MVP. The process felt clean and highly cost-effective due to Joey's experience, discernment, and skillset in software development as well as plain-language communication.
+          <br></br><br></br>
+          Congrats! You've found your guy.
+        </Testimonial>
+        <Testimonial
+          className={"mb-24 mt-6"}
+          client={{ name: 'Tejas', logo: null }}
+        >
+          I reached out to Joey for a basic prototype for my immigrant thought leadership platform. Joey was extremely responsive, and provided me a mock prototype pro-bono, without any payments, just so that I could be unblocked.
+          His wireframe diagrams were clean, extremely slick, and helped me move extremely fast. I am a great believer in working with good human beings, and Joey is one of the few I would definitely advocate for.
+          He is ethical, honest, helpful, and empathetic, and it is a pleasure to work with him and his team.
+          I strongly recommend leveraging Joey & his team for any software architecture and implementation.
+        </Testimonial>
+        <Testimonial
+          className="mb-24 mt-6"
+          client={{ name: 'Davide', logo: null }}
+        >
+          Joey helped me switch my career to Web Development, he's an amazing mentor. He gave me great advice on how to enhance my portfolio website, improving my CV, how to bring out my best potential at jobs interviews and managing my personal projects. Plus, he's really friendly and easy to talk to. Thanks to him, I succeded in finding a great job. I highly recommend him to anyone looking for career guidance!
+        </Testimonial>
+        <Testimonial
+          className="mb-24 mt-6"
+          client={{ name: 'Ekaterina', logo: null }}
+        >
+          Joey is a great mentor not only for newbies, but for anyone who wants to start a project and learn how to 'get things done'. I was able to benefit not only from his technical knowledge, but also from his very good product and practice orientation, which helped me to stay on track and not get thrown around by irrelevant details.        
+        </Testimonial>
+        <Testimonial
+          className="mb-24"
+          client={{ name: 'Aurora', logo: null }}
+        >
+          Joey is a wonderful mentor! He is very kind and responsive when I need help. He is always open to hear me out in my career searching journey. If you are looking for a real expert in the field who is kind and ready to listen and help with your technical issues, questions or even curiosities. With joey you will find the right person.
+        </Testimonial>
+        <Testimonial
+          className="mb-24"
+          client={{ name: 'Jacob', logo: null }}
+        >
+          I highly recommend Joey as a coding mentor. He is respectful of his clients' time and consistently comes prepared to sessions. His guidance is spot on and he always provides helpful resources to assist with problem-solving. I am grateful for his support and expertise.
+        </Testimonial>
+        <Testimonial
+          className="mb-24"
+          client={{ name: 'Jielin', logo: null }}
+        >
+          I had the privilege of being mentored by Joey, and it was a great experience working with him. His deep technical knowledge and patient guidance have significantly advanced my software development skills. Joey fosters a supportive learning environment where questions are encouraged, and with real-world project practice, he emphasizes the importance of effective communication and teamwork in Agile development. I wholeheartedly recommend Joey to anyone looking to excel in the field. Want help? Don't hesitate to reach out Joey!
+        </Testimonial>
+        <Testimonial
+          className="mb-24"
+          client={{ name: 'Navdeep', logo: null }}
+        >
+          	
+          Joey is very knowledgeable and responded quickly and thoroughly to all questions I had both technical and career related - would highly recommend!
+        </Testimonial>
+        <Testimonial
+          className="mb-24"
+          client={{ name: 'Filip', logo: null }}
+        >
+          	
+            Great communication and advice from the beginning, highly recommend
+        </Testimonial>
+        <Testimonial
+          className="mb-24"
+          client={{ name: 'Dan', logo: null }}
+        >
+          	
+            Joey is fantastic. No complaints.
+        </Testimonial>
+        <Testimonial
+          className="mb-24"
+          client={{ name: 'Anukiran', logo: null }}
+        >
+          	
+            The conversation with my mentor was incredibly helpful. They showed a keen understanding of my needs and were genuinely willing to help and provide guidance.
+        </Testimonial>
       </SimpleLayout>
     </>
   )

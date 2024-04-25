@@ -20,6 +20,7 @@ import logoBattleface from '@/images/logos/battleface.svg'
 import logoCOTA from '@/images/logos/cota.svg'
 import logoChase from '@/images/logos/chase.svg'
 import logoCleverApply from '@/images/logos/cleverapply.png'
+import { useRouter } from 'next/router'
 
 function SocialLink({ className, href, children, icon: Icon }) {
   return (
@@ -171,6 +172,23 @@ function Resume() {
   )
 }
 
+function NavItem({ href, children }) {
+  let isActive = useRouter().pathname === href
+
+  return (
+      <Link
+        href={href}
+        className="text-lg font-medium text-zinc-600 dark:text-zinc-400 transition hover:text-teal-500 dark:hover:text-teal-400 mb-10 display: block"
+      >
+        {children}
+        {isActive && (
+          <span className="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-teal-500/0 via-teal-500/40 to-teal-500/0 dark:from-teal-400/0 dark:via-teal-400/40 dark:to-teal-400/0" />
+        )}
+      </Link>
+
+  )
+}
+
 export default function About() {
   return (
     <>
@@ -197,43 +215,17 @@ export default function About() {
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
               Hi, I’m Joey Pedicini.
             </h1>
-            <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
+            <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400 mb-10">
               <p className="text-lg text-gray-500">
                 Recently I led the frontend development for Amazon’s initiative to integrate One Medical membership into the Amazon Prime benefits. Not too long into the project, I found out I would need to relocate my family to Seattle or resign. Despite the stress and pressure from this situation, I fulfilled my responsibilities and completed the project on time. I hoped that my strong effort would give me some room for negotiation, especially since I had previously negotiated a remote position when I first joined Amazon in early 2022. Unfortunately, Amazon was unwilling to budge on their policy, and so I resigned.
               </p>
               <p>
                 I walked away from that experience with a strong desire to take a leap of faith on my own business, and so I am now excited to offer my time, experience, and skills from 11 years in software development. I have worked with early stage startups, to more established startups, as well as large enterprises such as Amazon and JPMorgan Chase. I have experience with a wide range of technologies, but I specialize in frontend development. I have experience leading development teams, and a passion for cultivating future industry talent. I look forward to working with you!
               </p>
-              <p>
-                Are you an entrepreneur struggling to scale your technology product? Reach out if you want to:
-                <ul className="list-disc ml-5">
-                  <li>Make confident technical decisions.</li>
-                  <li>Streamline project management.</li>
-                  <li>Produce better architected solutions that are capable of scale.</li>
-                  <li>Build more reliable software.</li>
-                  <li>Reduce development risk.</li>
-                  <li>Adapt code rapidly.</li>
-                  <li>Serve clients better.</li>
-                  <li>Create higher value products.</li>
-                  <li>Earn more money.</li>
-                  <li>Save time.</li>
-                  <li>Free up bandwidth to focus on the work that you love.</li>
-                </ul>
-              </p>
-              <p>
-              Are you an engineering leader struggling to get the most out of your development team? Contact me if you are looking to have:
-                <ul className="list-disc ml-5">
-                  <li>A motivated team that follows best practices for development and project management.</li>
-                  <li>A reduction in turnover as developers keep pace with company growth.</li>
-                  <li>A decreased need to hire additional tech talent.</li>
-                  <li>The ability to promote from within.</li>
-                  <li>Increased developer engagement and loyalty.</li>
-                  <li>Enhanced team productivity.</li>
-                  <li>Higher quality output.</li>
-                  <li>Happier clients.</li>
-                </ul>
-              </p>
             </div>
+            <NavItem href="/projects">My Projects</NavItem>
+            <NavItem href="/blog">My Journal</NavItem>
+            <NavItem href="/music">My Music</NavItem>
           </div>
           <div className="lg:pl-20">
             <ul role="list">

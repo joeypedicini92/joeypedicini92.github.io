@@ -128,14 +128,9 @@ export default function Home() {
           <p className="mt-6 mb-6 text-base text-zinc-600 dark:text-zinc-400">
             I’m Joey Pedicini, a CTO and software development coach based in Columbus,
             Ohio. I'm looking to bring more humanity into the tech world.
-          </p><p className="mt-6 mb-6 text-base text-zinc-600 dark:text-zinc-400">I believe that strong tech leadership goes beyond technical expertise. It's about building a cohesive and motivated team that thrives on best practices, continuous learning, and a shared passion for delivering high-quality software. My coaching empowers engineering leaders to cultivate such a team, leading to increased productivity, developer engagement, and ultimately, happier clients.
+          </p><p className="mt-6 mb-6 text-base text-zinc-600 dark:text-zinc-400">I believe that strong tech leadership goes beyond technical expertise. It's about building a cohesive and motivated team that thrives on best practices, continuous learning, and a shared passion for delivering high-quality software. My coaching empowers developers to keep growing, and then use their skills and knowledge to improve the business to drive company success. Employee development leads to better team morale which ties directly into team productivity.
           </p>
           <div className="mt-6 flex gap-6">
-            <SocialLink
-              href="https://github.com/joeypedicini92"
-              aria-label="Follow on GitHub"
-              icon={GitHubIcon}
-            />
             <SocialLink
               href="https://www.linkedin.com/in/joey-p-a3343924/"
               aria-label="Follow on LinkedIn"
@@ -145,6 +140,11 @@ export default function Home() {
               href="https://www.instagram.com/holistic_cto"
               icon={InstagramIcon}
               aria-label="Follow on Instagram"
+            />
+            <SocialLink
+              href="https://github.com/joeypedicini92"
+              aria-label="Follow on GitHub"
+              icon={GitHubIcon}
             />
             <SocialLink
               href="https://soundcloud.com/los-gookies"
