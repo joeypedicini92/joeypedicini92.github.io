@@ -20,6 +20,7 @@ import logoBattleface from '@/images/logos/battleface.svg'
 import logoCOTA from '@/images/logos/cota.svg'
 import logoChase from '@/images/logos/chase.svg'
 import logoCleverApply from '@/images/logos/cleverapply.png'
+import logoFullstack from '@/images/logos/FSA logo.png'
 import { useRouter } from 'next/router'
 
 function SocialLink({ className, href, children, icon: Icon }) {
@@ -101,6 +102,13 @@ function Resume() {
       logo: logoAmazon,
       start: 'April 2022',
       end: 'February 2024',
+    },
+    {
+      company: 'Fullstack Academy',
+      title: 'Mentor II',
+      logo: logoFullstack,
+      start: 'May 2023',
+      end: 'October 2023',
     },
     {
       company: 'battleface',
@@ -272,11 +280,11 @@ export default function About() {
                 Follow on Bonjournl
               </SocialLink>
               <SocialLink
-                href="mailto:joey.pedicini@gmail.com"
+                href="mailto:joey@codecompass.org"
                 icon={MailIcon}
                 className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
               >
-                joey.pedicini@gmail.com
+                joey@codecompass.org
               </SocialLink>
             </ul>
           </div>

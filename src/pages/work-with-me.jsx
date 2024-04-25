@@ -31,7 +31,7 @@ export default function Consulting() {
       >
         <p className="mt-6 mb-6 text-base text-zinc-600 dark:text-zinc-400">
           <h2 className="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl">Are you an entrepreneur lost in a sea of technical jargon?</h2>
-          Do you need someone to help you make confident technical decisions? Are you having trouble managing an offshore development team? Are you unsure if the product you are building will be able to scale? Are you looking to free up time to focus on the parts of running your business that you love? Together, we can create higher value products, earn more money, and serve your clients better.
+          Do you need someone to help you make confident technical decisions? Are you having trouble managing an offshore development team? Are you unsure if the product you are building will be able to scale? Are you looking to free up time to focus on the parts of running your business that you love? Together, we can create higher value products, serve your clients better, and earn more money.
         </p>
         <p className="mt-6 mb-6 text-base text-zinc-600 dark:text-zinc-400">
           <h2 className="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl">Are you an engineering leader struggling to get the most out of your development team?

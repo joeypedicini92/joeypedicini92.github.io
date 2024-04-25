@@ -11,28 +11,9 @@ import logoFridgeraider from '@/images/logos/fridgeraider.png'
 
 const projects = [
   {
-    name: 'Initial Web UI Mock Ups for GoEB1',
-    description:
-      'GoEB1 aids applicants in fulfilling EB1A visa requirements by providing a comprehensive platform with several features. These include profile evaluation, recommendation, document management, and opportunity ingestion. I collaborated with the founder to create initial mock-ups for the web UI.',
-    link: { href: '/goeb1_visily_design.pdf', label: 'GoEB1 Mock Ups' },
-    logo: logoCodeCompass,
-  },
-  {
-    name: 'Breakfast Menu',
-    description: 'Breakfast Menu is a simple tool that helps you build a consistent morning routine. I developed a quick proof-of-concept to test the idea. I then worked with the Nic to design and build the MVP based on his specifications, which included daily alerts sent to his phone which I was able to develop using Firebase and Web Notificaitons. PWA Built with Next.js, Firebase, and Tailwind.',
-    link: { href: 'https://breakfast-menu.vercel.app/', label: 'Breakfast Menu' },
-    logo: logoCodeCompass
-  },
-  {
-    name: 'Africa Bridge Data Collection',
-    description: 'Africa Bridge is a nonprofit, rural economic development organization. I set up the infrastructure to manage data collection from rural Tanzania to be analyzed in Portland, Oregon. This involved offline dynamic forms built with ODK Collect, an open-source Android project, as well as an ODK server built on Google App Engine to ingest the data and serve the forms. Built with ODK Collect.',
-    link: { href: 'https://africabridge.org/our-impact/', label: 'Kisondela Wellbeing Survey 2021' },
-    logo: logoAfricaBridge
-  },
-  {
     name: 'Fridgeraider',
     description:
-      'This is a project that I collaborated on with my mentee, Jacob, after he completed his mentorship. It is a web app that generates new recipes based on the ingredients available in your kitchen. The app also includes tools to help track food expiration dates and reduce food waste. It is a progressive web app (PWA) built with Next.js, ChatGPT, and Firebase.',
+      'This is a project that I collaborated on with a past client, Jacob, after he completed his mentorship. It is a web app that generates new recipes based on the ingredients available in your kitchen. The app also includes tools to help track food expiration dates and reduce food waste. It is a progressive web app (PWA) built with Next.js, ChatGPT, and Firebase.',
     link: { href: 'https://app.fridgeraider.org/', label: 'Fridgeraider' },
     logo: logoFridgeraider,
   },
@@ -44,23 +25,42 @@ const projects = [
     logo: logoComunidaddies,
   },
   {
+    name: 'Initial Web UI Mock Ups for GoEB1',
+    description:
+      'GoEB1 aids applicants in fulfilling EB1A visa requirements by providing a comprehensive platform with several features. These include profile evaluation, recommendation, document management, and opportunity ingestion. I collaborated with the founder to create initial mock-ups for the web UI.',
+    link: { href: '/goeb1_visily_design.pdf', label: 'GoEB1 Mock Ups' },
+    logo: logoCodeCompass,
+  },
+  {
+    name: 'Breakfast Menu',
+    description: 'Breakfast Menu is a simple tool that helps you build a consistent morning routine. I worked with Nic to design and build a quick proof of concept based on his specifications, which included daily alerts sent to his phone which I was able to develop using Firebase and Web Notificaitons. PWA Built with Next.js, Firebase, and Tailwind.',
+    link: { href: 'https://breakfast-menu.vercel.app/', label: 'Breakfast Menu' },
+    logo: logoCodeCompass
+  },
+  {
+    name: 'Africa Bridge Data Collection',
+    description: 'Africa Bridge is a nonprofit, rural economic development organization. I set up the infrastructure to manage data collection from rural Tanzania to be analyzed in Portland, Oregon. This involved offline dynamic forms built with ODK Collect, an open-source Android project, as well as an ODK server built on Google App Engine to ingest the data and serve the forms. Built with ODK Collect.',
+    link: { href: 'https://africabridge.org/our-impact/', label: 'Kisondela Wellbeing Survey 2021' },
+    logo: logoAfricaBridge
+  },
+  {
     name: 'Pretzel (work in progress)',
     description:
-      'Currently working with a co-founder to create an app for dads to meet other dads. The Peanut app for dads. Built with React, Supabase, Chakra UI.',
+      'Currently working to create an app for dads to meet-up and hang out with other dads. The Peanut app for dads. Built with FlutterFlow and Firebase.',
     link: { href: 'https://pretzel-app.vercel.app/', label: 'Pretzel' },
     logo: logoGithub,
   },
   {
     name: 'Rhythm RPG (work in progress)',
     description:
-      'An experimental project that my friend Danny came up with. A text-based RPG game where you have to play beats on a midi controller to fight battles. Built with React, MIDI.js, WebMidi.',
+      'An experimental text-based RPG game where you have to play beats on a midi controller to fight battles. Built with React, MIDI.js, WebMidi.',
     link: { href: 'https://rhythm-rpg.vercel.app/', label: 'Rhythm RPG' },
     logo: logoGithub,
   },
   {
     name: 'Diplomacy AI (work in progress)',
     description:
-      'This is a personal project of mine that I started over 5 years ago with Ember and Ruby, but am working on rewriting it. A modern Diplomacy game engine and SVG-based web app to play with AI, built with Next.js, Supabase, ChatGPT.',
+      'This is a personal project of mine that I started many years ago with Ember and Ruby, but am working on rewriting it. A modern Diplomacy game engine and SVG-based web app to play with AI, built with Next.js, Supabase, ChatGPT.',
     link: { href: 'https://diplomacy-ai.vercel.app/', label: 'Diplomacy AI' },
     logo: logoGithub,
   }
