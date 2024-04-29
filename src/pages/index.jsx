@@ -147,7 +147,7 @@ export default function Home() {
           Schedule a free 30 minute consultation to discuss your goals and how I can help you achieve them. I will provide you with a roadmap to success and a plan to get you there. I look forward to working with you!
         </p>
         <ContactDetails />
-        <iframe className="mt-10" width="100%" height="500" src="https://www.youtube.com/embed/hqZMsnBK3Jc?si=ZC8JnZFXDdFACN8g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe className="mt-10" width="100%" height="500" src="https://www.youtube.com/embed/hqZMsnBK3Jc?si=ZC8JnZFXDdFACN8g" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
       </Container>
       <Photos />
       
