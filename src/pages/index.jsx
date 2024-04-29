@@ -20,6 +20,8 @@ import image3 from '@/images/photos/image-3.jpg'
 import image4 from '@/images/photos/image-4.jpg'
 import image5 from '@/images/photos/image-5.jpg'
 import { Testimonial } from '@/components/Testimonial'
+import { FadeIn } from '@/components/FadeIn'
+import { InlineWidget } from "react-calendly";
 
 function MailIcon(props) {
   return (
@@ -108,6 +110,14 @@ function Photos() {
   )
 }
 
+function ContactDetails() {
+  return (
+    <FadeIn>
+      <InlineWidget url="https://calendly.com/joey-pedicini/30-minute-consultation" />
+    </FadeIn>
+  )
+}
+
 export default function Home() {
   return (
     <>
@@ -128,43 +138,19 @@ export default function Home() {
           <p className="mt-6 mb-6 text-base text-zinc-600 dark:text-zinc-400">
             I’m Joey Pedicini, a CTO and software development coach based in Columbus,
             Ohio. I'm looking to bring more humanity into the tech world.
-          </p><p className="mt-6 mb-6 text-base text-zinc-600 dark:text-zinc-400">I believe that strong tech leadership goes beyond technical expertise. It's about building a cohesive and motivated team that thrives on best practices, continuous learning, and a shared passion for delivering high-quality software. My coaching empowers developers to keep growing, and then use their skills and knowledge to improve the business to drive company success. Employee development leads to better team morale which ties directly into team productivity.
+          </p><p className="mt-6 mb-6 text-base text-zinc-600 dark:text-zinc-400">I believe that a fulfilling career in technology is within reach for anyone who is passionate and committed to making a change. My coaching goes beyond just teaching code; it's about empowering you to identify your strengths, develop a personalized learning path, and build the technical and personal skills needed to thrive in the tech industry.
           </p>
-          <div className="mt-6 flex gap-6">
-            <SocialLink
-              href="https://www.linkedin.com/in/joey-p-a3343924/"
-              aria-label="Follow on LinkedIn"
-              icon={LinkedInIcon}
-            />
-            <SocialLink
-              href="https://www.instagram.com/holistic_cto"
-              icon={InstagramIcon}
-              aria-label="Follow on Instagram"
-            />
-            <SocialLink
-              href="https://github.com/joeypedicini92"
-              aria-label="Follow on GitHub"
-              icon={GitHubIcon}
-            />
-            <SocialLink
-              href="https://soundcloud.com/los-gookies"
-              icon={SoundcloudIcon}
-              aria-label="Follow on Soundcloud"
-            />
-            <SocialLink
-              href="https://www.youtube.com/@dadbod591"
-              icon={YoutubeIcon}
-              aria-label="Follow on Youtube"
-            />
-            <SocialLink
-              href="https://app.bonjournl.com/public/824514e2-5960-4e2c-8b60-2f54bf3a4d86"
-              icon={BonjournlIcon}
-              aria-label="Follow on Bonjournl"
-            />
-          </div>
         </div>
+        <p className='mt-10'>
+        <h2 className="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl">Are you ready to hear more about how I can help you?
+          </h2>
+          Schedule a free 30 minute consultation to discuss your goals and how I can help you achieve them. I will provide you with a roadmap to success and a plan to get you there. I look forward to working with you!
+        </p>
+        <ContactDetails />
+        <iframe className="mt-10" width="100%" height="500" src="https://www.youtube.com/embed/hqZMsnBK3Jc?si=ZC8JnZFXDdFACN8g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </Container>
       <Photos />
+      
     </>
   )
 }

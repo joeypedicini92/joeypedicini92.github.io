@@ -237,6 +237,20 @@ export default function About() {
           </div>
           <div className="lg:pl-20">
             <ul role="list">
+            <SocialLink
+                href="https://www.linkedin.com/in/joey-p-a3343924/"
+                icon={LinkedInIcon}
+                className="mt-4"
+              >
+                Follow on LinkedIn
+              </SocialLink>
+              <SocialLink
+                href="https://github.com/joeypedicini92"
+                icon={GitHubIcon}
+                className="mt-4"
+              >
+                Follow on GitHub
+              </SocialLink>
               <SocialLink
                 href="https://www.instagram.com/holistic_cto"
                 icon={InstagramIcon}
@@ -258,20 +272,8 @@ export default function About() {
               >
                 Follow on Soundcloud
               </SocialLink>
-              <SocialLink
-                href="https://github.com/joeypedicini92"
-                icon={GitHubIcon}
-                className="mt-4"
-              >
-                Follow on GitHub
-              </SocialLink>
-              <SocialLink
-                href="https://www.linkedin.com/in/joey-p-a3343924/"
-                icon={LinkedInIcon}
-                className="mt-4"
-              >
-                Follow on LinkedIn
-              </SocialLink>
+
+
               <SocialLink
                 href="https://app.bonjournl.com/public/824514e2-5960-4e2c-8b60-2f54bf3a4d86"
                 icon={BonjournlIcon}

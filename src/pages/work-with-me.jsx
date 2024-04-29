@@ -30,15 +30,6 @@ export default function Consulting() {
         intro="I've been a software developer for over a decade and have worked with a variety of technologies and industries. I've helped startups and established companies build and scale their products. I've also mentored junior developers and engineering leaders. Whatever your goals are, I'm here to help you achieve them."
       >
         <p className="mt-6 mb-6 text-base text-zinc-600 dark:text-zinc-400">
-          <h2 className="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl">Are you an entrepreneur lost in a sea of technical jargon?</h2>
-          Do you need someone to help you make confident technical decisions? Are you having trouble managing an offshore development team? Are you unsure if the product you are building will be able to scale? Are you looking to free up time to focus on the parts of running your business that you love? Together, we can create higher value products, serve your clients better, and earn more money.
-        </p>
-        <p className="mt-6 mb-6 text-base text-zinc-600 dark:text-zinc-400">
-          <h2 className="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl">Are you an engineering leader struggling to get the most out of your development team?
-          </h2>
-          Are you seeking to cultivate a motivated development team that follows industry best practices? Are you struggling to reduce turnover and improve your team's morale? Do you wish you could reduce the need to hire additional tech talent, and instead promote from within? Together we can increase developer engagement and loyalty, enhance your team's productivity, deliver higher quality output, and make your clients happier.
-        </p>
-        <p className="mt-6 mb-6 text-base text-zinc-600 dark:text-zinc-400">
           <h2 className="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl">Are you feeling stuck in a deadend job or lost in your career?
           </h2>
           Are you looking to find a job that better aligns with your values? Are you struggling with burnout, impostor syndrome, or any negative emotions that come with a toxic job? Do you want to gain more flexibility in your work? Are you considering making a career change, either into technology or into a different role in technology? Together, we can make the most of your free time during the work day, learn new skills that better align with your passions and interests, build a portfolio that showcases your best work, and find a job that you love.
@@ -49,11 +40,6 @@ export default function Consulting() {
           Are you struggling to find a learning routine that works for you? Are you interested in building your own project but don't know where to start? Do you have problems managing your time and focus? Together we can develop a learning path that works for you, build a project that showcases your skills, and create a portfolio that will help you land your dream job.
         </p>
         <p className='mt-6 text-base text-zinc-600 dark:text-zinc-400'>
-        <h2 className="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl">Are you ready to hear more about how I can help you?
-          </h2>
-          Schedule a free 30 minute consultation to discuss your goals and how I can help you achieve them. I will provide you with a roadmap to success and a plan to get you there. I look forward to working with you!
-        </p>
-        <ContactDetails />
         <h2 className="mt-12 text-2xl font-bold text-zinc-800 dark:text-zinc-200">
           Testimonials
         </h2>
@@ -134,6 +120,11 @@ export default function Consulting() {
           	
             The conversation with my mentor was incredibly helpful. They showed a keen understanding of my needs and were genuinely willing to help and provide guidance.
         </Testimonial>
+        <h2 className="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl">Are you ready to hear more about how I can help you?
+          </h2>
+          Schedule a free 30 minute consultation to discuss your goals and how I can help you achieve them. I will provide you with a roadmap to success and a plan to get you there. I look forward to working with you!
+        </p>
+        <ContactDetails />
       </SimpleLayout>
     </>
   )
