@@ -87,7 +87,7 @@ export default function Home() {
           I've been a software developer for over a decade and have worked with a variety of technologies and industries. I've helped startups and established companies build and scale their products. I've also mentored junior developers and engineering leaders. Whatever your goals are, I'm here to help you achieve them.
           </p>
         <p className='mt-6 mb-6 text-base text-zinc-600 dark:text-zinc-400'>
-          Schedule a free 30 minute consultation to discuss your goals and how I can help you achieve them. I will provide you with a roadmap to success and a plan to get you there. I look forward to working with you!
+          Schedule a free career roadmap session to discuss your goals and how I can help you achieve them. I will provide you with a roadmap to success and a plan to get you there. I look forward to working with you!
         </p>
         <ContactDetails />
 
