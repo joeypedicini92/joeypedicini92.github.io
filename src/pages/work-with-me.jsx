@@ -9,7 +9,7 @@ import { InlineWidget } from "react-calendly";
 function ContactDetails() {
   return (
     <FadeIn>
-      <InlineWidget url="https://calendly.com/joey-pedicini/30-minute-consultation" />
+      <InlineWidget url="https://calendly.com/joey-pedicini/free-roadmap-session" />
     </FadeIn>
   )
 }
@@ -39,7 +39,6 @@ export default function Consulting() {
           </h2>
           Are you struggling to find a learning routine that works for you? Are you interested in building your own project but don't know where to start? Do you have problems managing your time and focus? Together we can develop a learning path that works for you, build a project that showcases your skills, and create a portfolio that will help you land your dream job.
         </p>
-        <p className='mt-6 text-base text-zinc-600 dark:text-zinc-400'>
         <h2 className="mt-12 text-2xl font-bold text-zinc-800 dark:text-zinc-200">
           Testimonials
         </h2>
@@ -122,6 +121,7 @@ export default function Consulting() {
         </Testimonial>
         <h2 className="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl">Are you ready to hear more about how I can help you?
           </h2>
+          <p>
           Schedule a free 30 minute consultation to discuss your goals and how I can help you achieve them. I will provide you with a roadmap to success and a plan to get you there. I look forward to working with you!
         </p>
         <ContactDetails />
