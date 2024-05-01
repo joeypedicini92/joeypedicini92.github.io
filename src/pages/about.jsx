@@ -231,9 +231,7 @@ export default function About() {
                 I walked away from that experience with a strong desire to take a leap of faith on my own business, and so I am now excited to offer my time, experience, and skills from 11 years in software development. I have worked with early stage startups, to more established startups, as well as large enterprises such as Amazon and JPMorgan Chase. I have experience with a wide range of technologies, but I specialize in frontend development. I have experience leading development teams, and a passion for cultivating future industry talent. I look forward to working with you!
               </p>
             </div>
-            <NavItem href="/projects">My Projects</NavItem>
-            <NavItem href="/blog">My Journal</NavItem>
-            <NavItem href="/music">My Music</NavItem>
+            <NavItem href="https://codecompass.org">Free Career Navigation Course</NavItem>
           </div>
           <div className="lg:pl-20">
             <ul role="list">

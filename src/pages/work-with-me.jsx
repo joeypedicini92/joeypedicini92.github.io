@@ -1,16 +1,34 @@
 'use client'
 import Head from 'next/head'
-
+import Link from 'next/link'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import { Testimonial } from '@/components/Testimonial'
 import { FadeIn } from '@/components/FadeIn'
 import { InlineWidget } from "react-calendly";
+import { useRouter } from 'next/router'
 
 function ContactDetails() {
   return (
     <FadeIn>
       <InlineWidget url="https://calendly.com/joey-pedicini/free-roadmap-session" />
     </FadeIn>
+  )
+}
+
+function NavItem({ href, children }) {
+  let isActive = useRouter().pathname === href
+
+  return (
+      <Link
+        href={href}
+        className="text-lg font-medium text-zinc-600 dark:text-zinc-400 transition hover:text-teal-500 dark:hover:text-teal-400 mb-10 display: block"
+      >
+        {children}
+        {isActive && (
+          <span className="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-teal-500/0 via-teal-500/40 to-teal-500/0 dark:from-teal-400/0 dark:via-teal-400/40 dark:to-teal-400/0" />
+        )}
+      </Link>
+
   )
 }
 
@@ -29,16 +47,27 @@ export default function Consulting() {
         title="Software Development Coaching"
         intro="I've been a software developer for over a decade and have worked with a variety of technologies and industries. I've helped startups and established companies build and scale their products. I've also mentored junior developers and engineering leaders. Whatever your goals are, I'm here to help you achieve them."
       >
-        <p className="mt-6 mb-6 text-base text-zinc-600 dark:text-zinc-400">
-          <h2 className="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl">Are you feeling stuck in a deadend job or lost in your career?
+        
+        <NavItem href="https://codecompass.org">Free Career Navigation Course</NavItem>
+        <h2 className="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl">Are you feeling stuck in a deadend job or lost in your career?
           </h2>
+        <p className="mt-6 mb-6 text-base text-zinc-600 dark:text-zinc-400">
+
           Are you looking to find a job that better aligns with your values? Are you struggling with burnout, impostor syndrome, or any negative emotions that come with a toxic job? Do you want to gain more flexibility in your work? Are you considering making a career change, either into technology or into a different role in technology? Together, we can make the most of your free time during the work day, learn new skills that better align with your passions and interests, build a portfolio that showcases your best work, and find a job that you love.
         </p>
-        <p className="mt-6 mb-6 text-base text-zinc-600 dark:text-zinc-400">
-          <h2 className="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl">Are you an aspiring software developer overwhelmed with the seemingly endless amount of concepts to learn?
+        <h2 className="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl">Are you an aspiring software developer overwhelmed with the seemingly endless amount of concepts to learn?
           </h2>
+        <p className="mt-6 mb-6 text-base text-zinc-600 dark:text-zinc-400">
+
           Are you struggling to find a learning routine that works for you? Are you interested in building your own project but don't know where to start? Do you have problems managing your time and focus? Together we can develop a learning path that works for you, build a project that showcases your skills, and create a portfolio that will help you land your dream job.
         </p>
+
+        <h2 className="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl">Are you ready to hear more about how I can help you?
+          </h2>
+          <p>
+          Schedule a free 30 minute consultation to discuss your goals and how I can help you achieve them. I will provide you with a roadmap to success and a plan to get you there. I look forward to working with you!
+        </p>
+        <ContactDetails />
         <h2 className="mt-12 text-2xl font-bold text-zinc-800 dark:text-zinc-200">
           Testimonials
         </h2>
@@ -119,12 +148,7 @@ export default function Consulting() {
           	
             The conversation with my mentor was incredibly helpful. They showed a keen understanding of my needs and were genuinely willing to help and provide guidance.
         </Testimonial>
-        <h2 className="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl">Are you ready to hear more about how I can help you?
-          </h2>
-          <p>
-          Schedule a free 30 minute consultation to discuss your goals and how I can help you achieve them. I will provide you with a roadmap to success and a plan to get you there. I look forward to working with you!
-        </p>
-        <ContactDetails />
+
       </SimpleLayout>
     </>
   )
