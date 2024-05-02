@@ -10,7 +10,7 @@ import { useRouter } from 'next/router'
 function ContactDetails() {
   return (
     <FadeIn>
-      <InlineWidget url="https://calendly.com/joey-pedicini/free-roadmap-session" />
+      <InlineWidget url="https://calendly.com/joey-pedicini/free-30min-career-roadmap-session" />
     </FadeIn>
   )
 }
@@ -65,7 +65,7 @@ export default function Consulting() {
         <h2 className="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl">Are you ready to hear more about how I can help you?
           </h2>
           <p>
-          Schedule a free 30 minute consultation to discuss your goals and how I can help you achieve them. I will provide you with a roadmap to success and a plan to get you there. I look forward to working with you!
+          Schedule a free 30 minute roadmap session to discuss your goals and how I can help you achieve them. I will provide you with a roadmap to success and a plan to get you there. I look forward to working with you!
         </p>
         <ContactDetails />
         <h2 className="mt-12 text-2xl font-bold text-zinc-800 dark:text-zinc-200">
