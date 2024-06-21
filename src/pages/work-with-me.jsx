@@ -19,15 +19,15 @@ function NavItem({ href, children }) {
   let isActive = useRouter().pathname === href
 
   return (
-      <Link
-        href={href}
-        className="text-lg font-medium text-zinc-600 dark:text-zinc-400 transition hover:text-teal-500 dark:hover:text-teal-400 mb-10 display: block"
-      >
-        {children}
-        {isActive && (
-          <span className="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-teal-500/0 via-teal-500/40 to-teal-500/0 dark:from-teal-400/0 dark:via-teal-400/40 dark:to-teal-400/0" />
-        )}
-      </Link>
+    <Link
+      href={href}
+      className="text-lg font-medium text-zinc-600 dark:text-zinc-400 transition hover:text-teal-500 dark:hover:text-teal-400 mb-10 display: block"
+    >
+      {children}
+      {isActive && (
+        <span className="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-teal-500/0 via-teal-500/40 to-teal-500/0 dark:from-teal-400/0 dark:via-teal-400/40 dark:to-teal-400/0" />
+      )}
+    </Link>
 
   )
 }
@@ -44,27 +44,27 @@ export default function Consulting() {
         />
       </Head>
       <SimpleLayout
-        title="Software Development Coaching"
+        title="Software D evelopment Coaching"
         intro="I've been a software developer for over a decade and have worked with a variety of technologies and industries. I've helped startups and established companies build and scale their products. I've also mentored junior developers and engineering leaders. Whatever your goals are, I'm here to help you achieve them."
       >
-        
+
         <NavItem href="https://codecompass.org">Software Product Development Coaching</NavItem>
         <h2 className="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl">Are you feeling stuck in a deadend job or lost in your career?
-          </h2>
+        </h2>
         <p className="mt-6 mb-6 text-base text-zinc-600 dark:text-zinc-400">
 
           Are you looking to find a job that better aligns with your values? Are you struggling with burnout, impostor syndrome, or any negative emotions that come with a toxic job? Do you want to gain more flexibility in your work? Are you considering making a career change, either into technology or into a different role in technology? Together, we can make the most of your free time during the work day, learn new skills that better align with your passions and interests, build a portfolio that showcases your best work, and find a job that you love.
         </p>
         <h2 className="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl">Are you an aspiring software developer overwhelmed with the seemingly endless amount of concepts to learn?
-          </h2>
+        </h2>
         <p className="mt-6 mb-6 text-base text-zinc-600 dark:text-zinc-400">
 
           Are you struggling to find a learning routine that works for you? Are you interested in building your own project but don't know where to start? Do you have problems managing your time and focus? Together we can develop a learning path that works for you, build a project that showcases your skills, and create a portfolio that will help you land your dream job.
         </p>
 
         <h2 className="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl">Are you ready to hear more about how I can help you?
-          </h2>
-          <p>
+        </h2>
+        <p>
           Schedule a free 30 minute roadmap session to discuss your goals and how I can help you achieve them. I will provide you with a roadmap to success and a plan to get you there. I look forward to working with you!
         </p>
         <ContactDetails />
@@ -100,7 +100,7 @@ export default function Consulting() {
           className="mb-24 mt-6"
           client={{ name: 'Ekaterina', logo: null }}
         >
-          Joey is a great mentor not only for newbies, but for anyone who wants to start a project and learn how to 'get things done'. I was able to benefit not only from his technical knowledge, but also from his very good product and practice orientation, which helped me to stay on track and not get thrown around by irrelevant details.        
+          Joey is a great mentor not only for newbies, but for anyone who wants to start a project and learn how to 'get things done'. I was able to benefit not only from his technical knowledge, but also from his very good product and practice orientation, which helped me to stay on track and not get thrown around by irrelevant details.
         </Testimonial>
         <Testimonial
           className="mb-24"
@@ -124,29 +124,29 @@ export default function Consulting() {
           className="mb-24"
           client={{ name: 'Navdeep', logo: null }}
         >
-          	
+
           Joey is very knowledgeable and responded quickly and thoroughly to all questions I had both technical and career related - would highly recommend!
         </Testimonial>
         <Testimonial
           className="mb-24"
           client={{ name: 'Filip', logo: null }}
         >
-          	
-            Great communication and advice from the beginning, highly recommend
+
+          Great communication and advice from the beginning, highly recommend
         </Testimonial>
         <Testimonial
           className="mb-24"
           client={{ name: 'Dan', logo: null }}
         >
-          	
-            Joey is fantastic. No complaints.
+
+          Joey is fantastic. No complaints.
         </Testimonial>
         <Testimonial
           className="mb-24"
           client={{ name: 'Anukiran', logo: null }}
         >
-          	
-            The conversation with my mentor was incredibly helpful. They showed a keen understanding of my needs and were genuinely willing to help and provide guidance.
+
+          The conversation with my mentor was incredibly helpful. They showed a keen understanding of my needs and were genuinely willing to help and provide guidance.
         </Testimonial>
 
       </SimpleLayout>
