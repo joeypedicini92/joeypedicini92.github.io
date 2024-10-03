@@ -67,6 +67,7 @@ function LinkIcon(props) {
 }
 
 export default function Projects() {
+  debugger
   return (
     <>
       <Head>

@@ -88,7 +88,7 @@ function Resume() {
   let resume = [
     {
       company: 'CleverApply',
-      title: 'Chief Technology Officer',
+      title: 'Co-Founder & CTO',
       logo: logoCleverApply,
       start: 'January 2024',
       end: {
@@ -184,15 +184,15 @@ function NavItem({ href, children }) {
   let isActive = useRouter().pathname === href
 
   return (
-      <Link
-        href={href}
-        className="text-lg font-medium text-zinc-600 dark:text-zinc-400 transition hover:text-teal-500 dark:hover:text-teal-400 mb-10 display: block"
-      >
-        {children}
-        {isActive && (
-          <span className="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-teal-500/0 via-teal-500/40 to-teal-500/0 dark:from-teal-400/0 dark:via-teal-400/40 dark:to-teal-400/0" />
-        )}
-      </Link>
+    <Link
+      href={href}
+      className="text-lg font-medium text-zinc-600 dark:text-zinc-400 transition hover:text-teal-500 dark:hover:text-teal-400 mb-10 display: block"
+    >
+      {children}
+      {isActive && (
+        <span className="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-teal-500/0 via-teal-500/40 to-teal-500/0 dark:from-teal-400/0 dark:via-teal-400/40 dark:to-teal-400/0" />
+      )}
+    </Link>
 
   )
 }
@@ -228,14 +228,13 @@ export default function About() {
                 Recently I led the frontend development for Amazon’s initiative to integrate One Medical membership into the Amazon Prime benefits. Not too long into the project, I found out I would need to relocate my family to Seattle or resign. Despite the stress and pressure from this situation, I fulfilled my responsibilities and completed the project on time. I hoped that my strong effort would give me some room for negotiation, especially since I had previously negotiated a remote position when I first joined Amazon in early 2022. Unfortunately, Amazon was unwilling to budge on their policy, and so I resigned.
               </p>
               <p>
-                I walked away from that experience with a strong desire to take a leap of faith on my own business, and so I am now excited to offer my time, experience, and skills from 11 years in software development. I have worked with early stage startups, to more established startups, as well as large enterprises such as Amazon and JPMorgan Chase. I have experience with a wide range of technologies, but I specialize in frontend development. I have experience leading development teams, and a passion for cultivating future industry talent. I look forward to working with you!
+                This experience ignited a strong desire to take a leap of faith into entrepreneurship. It led me to go all-in on building CleverApply alongside my co-founder, Jahan Ghaznavi. Working with him as his CTO has been an incredible journey, and I'm thrilled to see where this venture takes us.
               </p>
             </div>
-            <NavItem href="https://codecompass.org">Software Product Development Coaching</NavItem>
           </div>
           <div className="lg:pl-20">
             <ul role="list">
-            <SocialLink
+              <SocialLink
                 href="https://www.linkedin.com/in/joey-p-a3343924/"
                 icon={LinkedInIcon}
                 className="mt-4"
@@ -278,13 +277,6 @@ export default function About() {
                 className="mt-4"
               >
                 Follow on Bonjournl
-              </SocialLink>
-              <SocialLink
-                href="mailto:joey@codecompass.org"
-                icon={MailIcon}
-                className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
-              >
-                joey@codecompass.org
               </SocialLink>
             </ul>
           </div>

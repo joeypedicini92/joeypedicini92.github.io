@@ -16,6 +16,7 @@ function ContactDetails() {
 }
 
 function NavItem({ href, children }) {
+  debugger
   let isActive = useRouter().pathname === href
 
   return (
@@ -48,7 +49,6 @@ export default function Consulting() {
         intro="I've been a software developer for over a decade and have worked with a variety of technologies and industries. I've helped startups and established companies build and scale their products. I've also mentored junior developers and engineering leaders. Whatever your goals are, I'm here to help you achieve them."
       >
 
-        <NavItem href="https://codecompass.org">Software Product Development Coaching</NavItem>
         <h2 className="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl">Are you feeling stuck in a deadend job or lost in your career?
         </h2>
         <p className="mt-6 mb-6 text-base text-zinc-600 dark:text-zinc-400">
