@@ -249,7 +249,7 @@ export default function About() {
                 Follow on GitHub
               </SocialLink>
               <SocialLink
-                href="https://www.instagram.com/holistic_cto"
+                href="https://www.instagram.com/joeypedicini"
                 icon={InstagramIcon}
                 className="mt-4"
               >

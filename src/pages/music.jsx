@@ -79,7 +79,7 @@ export default function Projects() {
       </Head>
       <SimpleLayout
         title="My Musical Journey"
-        intro="Recently, I have been learning the fundamentals of recording, mixing, and playing synthesizer and guitar and am thoroughly enjoying the process. I hope you find joy in it as well!"
+        intro="Music has always been a significant part of my life"
       >
         <ul
           role="list"
