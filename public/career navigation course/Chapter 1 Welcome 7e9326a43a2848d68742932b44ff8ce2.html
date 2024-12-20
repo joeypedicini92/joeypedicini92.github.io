@@ -1,0 +1,689 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Chapter 1: Welcome</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-default_background {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
+.select-value-color-translucentGray { background-color: rgba(0, 0, 0, 0.06); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="7e9326a4-3a28-48d6-8742-932b44ff8ce2" class="page sans"><header><img class="page-cover-image" src="https://images.unsplash.com/photo-1623178929748-5c468ae8d8d0?ixlib=rb-4.0.3&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb" style="object-position:center 46.85%"/><div class="page-header-icon page-header-icon-with-cover"><span class="icon">👋</span></div><h1 class="page-title">Chapter 1: Welcome</h1><p class="page-description"></p></header><div class="page-body"><p id="072c73a9-195f-43ea-a523-2107fc672ad0" class="">My name is Joey Pedicini. I began my journey in 2010 after graduating high school, which was over 13 years ago as of writing this. My objective is to assist you on your own journey. I want to help you avoid the mistakes I made, prepare you for the obstacles you may encounter, encourage you to believe in yourself, provide clear direction for your path, and support you in reaching your fullest potential.</p><p id="4b5653d2-9089-4539-a2e3-20b5e7ac8184" class="">I enrolled at The Ohio State University to pursue a Bachelor&#x27;s of Science degree in Computer and Information Science. When I applied to university, I had a vague idea of what I wanted to do in my career. I knew that I enjoyed working with computers and had a natural talent for it, but that was the extent of my knowledge. I was unsure if college was the right path for me, as it was simply what many of my peers were doing and what my parents and teachers encouraged me to pursue. However, I have no regrets about my decision and I mention this to provide some context for the choices I made on my journey. </p><p id="a91b7eca-4182-4df0-aac1-9ddef8f53f13" class="">During the first two years, there were multiple occasions where I seriously contemplated changing my major. I found it challenging to grasp the concepts, particularly when comparing myself to classmates who appeared to have years of coding experience. Recursion, in particular, was a source of great confusion for me. I barely managed to navigate through assembly language, finite state machines, and operating systems.</p><p id="c851b699-90c2-4c92-a348-c8a12e16ec12" class="">I didn’t give up, and I’m grateful I didn’t, because once I got introduced to web development, and specifically frontend development, my outlook on my career changed and I found my footing. This is why I truly believe, no matter what you are trying to learn or what career you are trying to get into, you have unique skills and interests, it’s a matter of finding a role where you can let those aspects shine brightest. </p><p id="3dc350b0-91ef-4ce0-bdad-05d0ef9892bf" class="">
+</p><hr id="767b12bd-2807-4876-99ad-7605020c9e1c"/><p id="c94d806a-d63c-47d2-b040-be4d98b2f8c1" class="">
+</p><h2 id="0e5ddb5c-339e-4b27-8dea-1ce8a432513e" class="">What is my goal?</h2><ul id="985adb87-d63d-4388-816b-203929cdd82b" class="bulleted-list"><li style="list-style-type:disc">to help you cut through the noise. If you ask 100 different senior engineers what is most important for junior engineers to learn, you will get 100 different answers. But there are common themes that they all can agree on. I want you to focus on that right away and not waste your time on things that don’t matter</li></ul><ul id="329569f5-af97-4327-93e6-620c67c2e528" class="bulleted-list"><li style="list-style-type:disc">for this course to act as a self-guided mentorship. to recreate the proven methods that I work with my clients in order to scale this mentorship to more people</li></ul><ul id="303b0ce4-9b72-4138-b802-8b1c8b5b8282" class="bulleted-list"><li style="list-style-type:disc">to build your confidence. Confidence is the number one trait that will carry you in your career. Everything in this book will tie back to building your confidence.</li></ul><ul id="1cec0246-970f-40e3-bde1-966ce7479a59" class="bulleted-list"><li style="list-style-type:disc">to organize my thoughts and ideas into an easy to follow guide for any junior developer, whether they are trying to start their career, or reach the next level.</li></ul><p id="cc98088f-4e85-462b-b185-7b490e614b92" class="">
+</p><p id="859b19c8-e8d2-4038-952c-0ad542ae0e8e" class="">In this book, I aim to provide my own perspective and guidance that can be applied to learning any new skill and entering any new career. In my opinion, the foundations of learning remain consistent regardless of the specific skill or career you are pursuing. While I will delve into the specifics of frontend web development later in the book, there will still be plenty of tips and learning guides that can be useful for a wider range of studies. Additionally, you may find value in following the guide to building your own personal project or gaining a better understanding of what frontend web developers do.</p><p id="c8252d03-c768-49ef-bd6c-50c564703b8c" class="">
+</p><p id="a6c9aabe-4a93-42d5-9eb2-9d89c2b6b860" class="">My goal is to provide as much vital information in as few words as possible. If you are anything like me, you have a hard time focusing on reading when there are too many words, or you can’t even get yourself to start because of the wall of text in front of you. I hope to avoid that.</p><p id="dbf8155b-5be2-4b31-b3ab-dac70cab0625" class="">
+</p><h1 id="c2f4d7df-58c6-403b-b48b-85fb3f551ad9" class=""><strong>The Journey of Learning Software Development</strong></h1><p id="bc86a61b-4f71-4f23-a299-04fb69d83f3e" class="">Learning software development is hard. There&#x27;s no definitive right or wrong way to learn, but I firmly believe that anyone can learn if they&#x27;re properly motivated. For some, this motivation stems from the thrill of creation—starting with an idea in their head, transforming it into physical reality, and then sharing that with the world. That&#x27;s my preferred learning method, and that&#x27;s how I assist my mentees.</p><h1 id="6a27aa18-31fd-47b1-993c-16526d90fcd2" class=""><strong>The Power of Personal Projects</strong></h1><p id="afb0648a-a8b3-4237-934a-07045eb433b5" class="">There are countless ways we can integrate software into our daily lives. Even though we&#x27;re all unique individuals, with our own interests and skills, there&#x27;s a software project out there for everyone. For me, that project materialized as a journaling app I named Bonjournl.</p><h1 id="bedfde65-c0cd-45af-afa1-60712315af3e" class=""><strong>From Problem to Project: The Story of Bonjournl</strong></h1><p id="b196f7b6-28c3-4bdf-9da0-5f61f8b2daff" class="">It all started with a problem—I needed a tool to encourage me to write daily, as writing contributes positively to my mental health. I wasn’t satisfied with the existing tools; they all served their purpose but didn’t align with my unique workflow. So, I noted down a few key features that I wanted my app to possess, drafted some rough sketches on a whiteboard, and set to work. This journey highlighted how one&#x27;s own challenges could fuel creative problem solving and product development.</p><h1 id="5b6def36-9444-4b56-87ce-b69e067b8e3c" class=""><strong>Guiding Clients on their Learning Journey</strong></h1><p id="7ee200ca-f277-4edc-ba9a-04f0d999a72c" class="">When I initiate work with a new client, I urge them to consider a problem in their daily life that software could potentially solve or improve. It might be an existing product that falls short of addressing their unique challenges. There are a variety of projects that people have wanted to build: a habit tracker, an anonymous therapy app, a podcast summary generator, an online dog tag, a community prayer app, and the list goes on.</p><h1 id="8838be64-2d1f-4704-81e5-fbeee93ba044" class=""><strong>The Impact: Creating and Learning</strong></h1><p id="50aad0f8-c62b-456b-a74f-5d4255adf79c" class="">What&#x27;s fantastic about this learning approach is the innovation it spurs. While learning software development, fresh ideas and perspectives on existing issues are constantly being formed. One project at a time, we&#x27;re incrementally improving the world. The ability to share your creation with the world is a powerful driving force.</p><h1 id="dc00234f-3dfc-42b9-aa99-44ba00492ea0" class=""><strong>Learning in the Information Age</strong></h1><p id="ed674721-0b25-4aef-8029-d7ff88b580d6" class="">The allure of the information age is vast. All the information you need to bring whatever ideas you conjure up to life is at your fingertips. At times, all that&#x27;s required is guidance from someone who has tread the path before to help you navigate it.</p><h1 id="685202b7-4f2b-48c5-bc62-9c5401aaae0d" class=""><strong>The Mentor&#x27;s Role</strong></h1><p id="f992d9e6-3d6a-4a49-b793-8ce2e4de1a78" class="">My clients are the captains of the ship; I merely act as a guide to keep them on course and prevent capsizing. I&#x27;m there to cheer you on and reassure you that you have what it takes. Through this process, not only do my clients gain a comprehensive understanding of software development, but they also build practical solutions that they can take pride in.</p><h1 id="101ac40a-fd40-44a5-a113-ac5515c0e644" class=""><strong>The Step-by-Step Process: Bringing Ideas to Life</strong></h1><p id="d74bf2f5-7f50-4b5a-a9e1-a81b0eda8555" class="">One of the crucial elements of the mentorship I offer is a defined process for taking an idea from conception to realization. It&#x27;s a step-by-step journey, which we&#x27;ll explore in more depth below.</p><h2 id="729143c1-5fc1-4e82-b987-3ca50785b88a" class=""><strong>1. Ideation</strong></h2><p id="b5d8196f-e5f5-4921-870a-cd22f1a7ebfd" class="">The first step is to form an idea. There are no limitations on what ideas can be worked on, but the idea should serve a purpose - it should solve a problem. So, I suppose we could say we start with identifying the problem statement.</p><h2 id="57cc26fa-4a43-4764-b0b0-f3e9d23bf1c8" class=""><strong>2. Establishing Requirements</strong></h2><p id="91fe23ac-f361-400b-a006-fd2a147d18f0" class="">Next, we come up with a few requirements. Bonus points are given for writing these requirements as user stories. I encourage my clients to learn about what makes a good user story (Given, When, Then; Acceptance Criteria).</p><h2 id="1ee338db-2f2a-4cfa-a676-263c8a0a3d0e" class=""><strong>3. Sketching the User Interface</strong></h2><p id="818a57fc-e33f-43fc-a23c-de9acb86b5b5" class="">If our project has a user interface, we then create some whiteboard sketches of what it will look like. This step allows us to visualize our product and plan for its functionality.</p><h2 id="27893381-d30e-46ca-94ce-322ffab7927c" class=""><strong>4. Review and Feedback</strong></h2><p id="21420d1c-19f3-4956-978c-8b0c3c7e7e08" class="">Then comes the review stage. We go over the sketches and requirements together, and I provide my feedback. After that, we decide on a task management process that suits the client&#x27;s comfort level. This could range from using Jira, GitHub issues, or even just a plain to-do list.</p><h2 id="3e67b5cd-762e-43b8-aa7c-95ed709a0612" class=""><strong>5. Task List Creation</strong></h2><p id="8e6b8fd6-1f38-46b0-803b-455b519db15b" class="">Once we have our management process, we create a list of tasks and prioritize them. The goal is to produce working, useful software as early in the process as possible to facilitate early feedback.</p><h2 id="d325bba9-f98e-46cd-9adc-7f1d821513d9" class=""><strong>6. Choosing the Tech Stack</strong></h2><p id="874f4aa7-94ba-405a-a15d-cd75b89dee90" class="">The next step is deciding on the tech stack. The choice entirely depends on what the client feels comfortable with, because the learning process can adapt to anything.</p><h2 id="3dbb61bd-4bcd-40d3-a809-59deb6c1d659" class=""><strong>7. Development and Check-ins</strong></h2><p id="44eff68d-4b73-4ced-8f96-8c87bc29bb7d" class="">Task by task, we build the project, with weekly check-ins to assess progress. I also remain available via chat for any queries or hurdles the client might face during their coding journey.</p><h2 id="5820d8df-60dd-41b3-b422-e0481797e38f" class=""><strong>8. Setup and Launch</strong></h2><p id="c5a12674-c3db-4299-996e-93ea40f03cc4" class="">The first task is always to get a &quot;Hello World&quot; app running and have your main branch hooked up to a CI pipeline. This ensures that each push updates your production app.</p><h2 id="1f81202c-e07e-4be6-a50e-a69795d1415b" class=""><strong>9. Iteration</strong></h2><p id="48b52ef7-6214-457e-983b-182d039bdea0" class="">Once enough of the project is complete to start using and sharing it with others, we can begin to identify what is missing and what could be improved. This stage involves a lot of iteration and refinement based on the feedback received.</p><h1 id="03460053-6547-47eb-9711-df05d9837358" class=""><strong>Embrace Imperfection: There&#x27;s No Such Thing as Terrible Code</strong></h1><p id="0fa0be98-29cb-441b-88aa-99fddb836137" class="">One key piece of advice I always share with budding developers is that there is no such thing as terrible code. There is working software, and there is non-working software.</p><p id="e6d17662-a98e-4342-8508-7e3cbf878f28" class="">Too often, developers hold themselves back because they fear producing bad code. But the reality is, the internet is built on what some may consider &quot;bad&quot; code. Especially if it&#x27;s a proof-of-concept project, the quality of the code doesn&#x27;t matter in the least. The goal is to build something that elicits feedback and allows for further iteration. If it ever reached a point where it received funding, a team would be brought on board to re-write the software to be more scalable.</p><p id="e7683fed-f77a-470a-ae79-d10c57d1b42b" class="">So write code that might be deemed terrible and wear it as a badge of honor! It&#x27;s a testament to your learning journey, and each line of code brings you one step closer to becoming the developer you aspire to be.</p><h1 id="e443e902-a6a0-4a99-8e58-b512b7cf9128" class=""><strong>In conclusion</strong></h1><p id="5577d559-132f-4083-8368-9dc6374fbcbd" class="">Learning software development is an enriching journey that fosters creativity and problem-solving skills. Through identifying everyday problems and turning them into personal projects, you&#x27;ll gain a deeper understanding of software development and improve the world one project at a time.</p><p id="07d40811-c7aa-4930-ad55-00ce80b1a8b3" class="">Humans are innately creative. I want to build something beautiful and leave my legacy. So that someone in the future, whom I will never meet or ever know, can look at or make use of something I created which will truly add value to their life and allow them to pursue their own passion and leave their own legacy. </p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

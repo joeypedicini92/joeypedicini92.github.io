@@ -1,0 +1,691 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Mastering motivation</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-default_background {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
+.select-value-color-translucentGray { background-color: rgba(0, 0, 0, 0.06); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="84610cdc-da0d-4050-99b4-25c9934bdd67" class="page sans"><header><img class="page-cover-image" src="https://images.unsplash.com/photo-1546188995-2936250e7c2f?ixlib=rb-4.0.3&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb" style="object-position:center 50%"/><div class="page-header-icon page-header-icon-with-cover"><span class="icon">😤</span></div><h1 class="page-title">Mastering motivation</h1><p class="page-description"></p></header><div class="page-body"><p id="b32d3a23-d6e5-4107-a4c6-5715c54ea698" class="">
+</p><p id="664d95a9-5533-44bc-92f0-08f3eca70848" class="">
+</p><p id="90ce2b95-de27-419b-89db-7259fafd84ee" class="">You will have moments where the motivation is high, you have the wind at your back,  the sun is out, you are making great progress, you’re feeling great.</p><p id="3990b9b4-ac5e-4dd9-a570-f1329991a7bb" class="">You will have moments where there is no motivation, the wind is blowing in your face, it’s pouring rain, you are moving backwards, you’re feeling hopeless.</p><p id="d036e009-0e7e-4445-8140-86cabf7337fe" class="">The latter are the moments that define your journey. They are the moments that cause you to quit if you aren’t focused on the larger goal.</p><p id="ebcf77ae-deed-422b-9a16-908a20695c01" class="">
+</p><p id="7636fc3c-e9b1-4b9e-a67b-9caf4b2caa23" class="">How do I motivate myself to pursue <strong>(some goal)</strong> rather than <strong>(some other goal)</strong>, given <strong>(current state)</strong> over <strong>(timeframe)</strong>?</p><p id="7f6f7986-a2d1-4d0e-a309-06acb551fec2" class="">
+</p><p id="566cc5bd-2416-4eb0-b7e5-3a43564c8c70" class="">How do I motivate myself to pursue <strong>learning software development</strong> rather than <strong>playing video games</strong>?</p><p id="b1520668-fe2e-4aa3-88b0-eb94d6c9fda6" class="">How do I motivate myself to pursue <strong>financial freedom</strong> rather than <strong>happiness</strong>?</p><p id="938f2408-5822-4933-8300-079659802f4e" class="">How do I motivate myself to pursue <strong>writing this book</strong> rather than <strong>spending my free time dissociating on social media</strong>?</p><p id="dfc3eec7-b9df-4258-a117-1fba87c52f62" class="">
+</p><hr id="bc962f92-e6fe-47aa-8902-5e0fcab22201"/><p id="a281ca46-f18c-4c13-8cee-f755a2f24adb" class="">
+</p><p id="3070f725-a51b-4a8e-a59e-7f0db617f283" class="">Truly connect with what you are doing. have fun doing it. anything can be made into a game. Each step will be progressively harder, like a video game. Don&#x27;t try to beat level 10 on day one. Start with the tutorial level. but as you improve and you will improve quickly at the beginning, you will reach a point where the novelty wears off and you need to find fun ways to keep the motivation up, make it as fun as possible to practice.</p><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">Why I wanted the job at Amazon</summary><div class="indented"><p id="a0801c3b-1768-43ae-a562-a244b2e9211a" class="">I’ll give a personal anecdote. It was 2020. I was already 7 years into my career, over 3 years at my current job, and I was on career auto-pilot.</p><p id="183ca00f-fd5c-4932-bb27-bf3ce5c47820" class="">My daughter was born that May. My wife and I weren’t ready for being first time parents right at the height of the COVID pandemic. We struggled to find our stride balancing parenthood and work and everything else in between.</p><p id="43721e80-500d-4f80-bbfe-cdb08ae805cb" class="">It reached a point where we decided that we needed to make drastic changes. My wife would leave her job to focus on being the mom she wanted to be without the stress of work getting in the way.</p><p id="b06f26af-7075-47e6-8565-ae24b02ea23c" class="">My goal at that time became to make up for my wife’s lost income, so that she could comfortably focus on being a mom without feeling guilty for giving up her steady income.</p><p id="7dfeb08d-0758-4133-ad14-9b38ce172976" class="">I spoke to every recruiter that reached out to me. I applied to jobs at all the big tech companies and tons of mid-sized companies for senior roles. I took on big projects at work to give myself more experiences to talk about during interviews, and to build my confidence. I worked late hours. Everything I did during that time was tied directly to that goal.</p><p id="f238cd01-4bd1-4748-9037-64194452ccd0" class="">There were many low points, lots of failed interviews, a job offer that was lower than I wanted, then a job offer that was better but still not where I wanted to be. But I took the new job and was hyper-focused on bringing everything I could to that job. I had failed enough big tech interviews to know exactly what I needed to improve on to get an offer, so I spent my time at the new job working tirelessly to build that missing experience.</p><p id="65690cf9-084f-41a8-a4fd-533e943f6835" class="">Later in the book I’ll go into more detail on the approaches I took to prepare for the Amazon interview that ultimately landed the job that got me to reach my goal. But that was a year and a half long journey that wouldn’t have been possible without that goal motivating me for the long term.</p></div></details><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0"><strong>A Higher-Order Approach to Motivation</strong></summary><div class="indented"><p id="fd78c65e-5a8b-4121-a878-dbe8c7a01b68" class="">
+</p><h3 id="a6edbfe9-96b3-496b-9155-a0460306447c" class=""><strong>A Deep Dive into the Mechanisms of Motivation and We can use them to achieve goals that improve our lives over the long term.</strong></h3><hr id="5d57de08-dc06-4453-8f78-525ee28da8d1"/><hr id="61140ea4-2425-46b6-8fc0-db84b1634c7a"/><p id="146d032d-708c-4ea1-a3db-969f32fda71e" class="">Functional programming. Higher order functions. Functions A, B and C - each one takes a single input and provides an output. How do we extract the similarities into a higher order function, D, so then you can do D(A), D(B), and D(C).</p><p id="cb8934ba-9bbd-45f5-a5c8-8cff98a3d03b" class="">This concept applies to things beyond programming. I&#x27;m learning guitar so I&#x27;ll try to create an example out of that. I want to learn some chord progressions. I can try to memorize various chord progressions, but the closer I look I can extract patterns out of them. The higher order here would be learning the circle of fifths. Then I can learn to calculate a 1, 4, 5 chord progression in any key.</p><hr id="c2498be6-b0f6-4a87-a0fd-b5d46b769f7e"/><p id="3d11c392-4e35-4c2f-afd6-f1185209625a" class="">How do I motivate myself to pursue _____ rather than ______?</p><p id="930909a2-27ae-4896-b655-461676319cec" class="">What even is motivation?</p><blockquote id="869e2f04-83d5-47be-8528-f4a46fb87d33" class="">Motivation can be defined as the driving force that encourages individuals or groups to reach their goals. It is the internal or external stimulus that stimulates interest, desire, and the willingness to put in the effort to achieve a particular outcome or maintain a particular behavior.</blockquote><blockquote id="122bce26-82a0-4188-af08-3c187ab6fceb" class="">In psychology, motivation is often classified into two categories:</blockquote><blockquote id="6293625d-6741-4deb-b5a2-cb720567618f" class="">Intrinsic motivation, which refers to doing something because it is inherently satisfying or pleasurable, or because it fulfills a personal interest or passion.</blockquote><blockquote id="ff45cba7-0a26-485a-a08a-916c40b5fa3d" class="">Extrinsic motivation, which refers to doing something in order to obtain some external reward or avoid a negative consequence.</blockquote><p id="46c42737-0450-4f8b-9f2d-9c52f020069a" class="">Back to the higher order question: How do I motivate myself to pursue <strong>(some goal/action)</strong> rather than <strong>(some other goal/action)</strong>?</p><p id="04079dbe-7821-471b-81d3-3b135adb20cd" class="">Let&#x27;s come up with an example:</p><p id="be217120-5b54-4b1e-9e6f-7ba2c1b790dc" class="">How do I motivate myself to pursue <strong>learning software development</strong> rather than <strong>playing video games</strong>?</p><p id="2d0078e9-1b26-4b98-b3e1-5712988551c3" class="">How do I motivate myself to pursue <strong>financial freedom</strong> rather than <strong>happiness</strong>?</p><p id="8e8a0513-7bc3-48ad-a338-ef7a6176d8a2" class="">How do I motivate myself to pursue <strong>writing this book</strong> rather than <strong>spending my free time dissociating on social media</strong>?</p><p id="8a3ece8b-2203-4141-adad-df352319573d" class="">What I realized in coming up with that example was that both goals or actions can be productive and worthy of striving for. But there is a missing variable here, and that has to do with the current state. In the above example, maybe I&#x27;m happy with my current state, but it&#x27;s beneficial for me to focus more on a new goal or action, even if that means temporarily lowering my current state.</p><p id="39d53509-3dcb-41a2-a77b-579eadb647c8" class="">So there needs to be some stimulus that pushes me toward an immediate state that, if I&#x27;m focusing purely on the present, maybe seems like a downgrade, but if I expand my focus to a longer-term view, will be an upgrade. So that&#x27;s another variable: time.</p><p id="88584728-940d-42e1-b57c-8db87a5769c0" class="">If we are only looking at let&#x27;s say the next 5 minutes, the motivation will need to be more extreme to get me to take action toward goal A over goal B. And let&#x27;s call goal B my current goal, and goal A the new goal.</p><p id="f8c78e35-a483-46be-8473-3b48df544861" class="">But if we expand the timeframe to the next year, then the motivation that it will take for me to pursue the new goal will be less extreme than the previous example of 5 minutes.</p><p id="d206e0d0-2b11-4901-96db-92bfc38a7309" class="">So we&#x27;ve added 2 new variables to this question: How do I motivate myself to pursue <strong>(some goal)</strong> rather than <strong>(some other goal)</strong>?</p><p id="2364e9e9-5009-4461-a01c-28800997602e" class="">New Question:</p><p id="8f04779d-261d-4b0c-9e77-57cb141a4f60" class="">How do I motivate myself to pursue <strong>(some goal)</strong> rather than <strong>(some other goal)</strong>, given <strong>(current state)</strong> over <strong>(timeframe)</strong>?</p><p id="d1af1705-d372-444b-a3c1-c1def0b78765" class="">You can continue to dive into this. I can see (current state) being its own function based on various parameters. That goes back to the question I posed at the beginning of this, &quot;what is important in life?&quot; Am I currently well fed? Do I have good hygiene? How is my overall health? My financial situation?</p><hr id="ad700ab7-5687-414c-b559-7171a9589de5"/><p id="000d0608-3e5b-4a82-8faa-7ce901fd273c" class="">I&#x27;ll stop here because I think I&#x27;ve strayed far enough away from the original topic and I didn&#x27;t intend to write this much in this one sitting.</p><p id="379d7fe5-1db3-48d0-9589-51a7c724f787" class="">To tie it all together, this will be fluid, so it&#x27;s extremely important to revisit this on a regular basis and take note of our current state, and define a timeframe over which we want to consider these motivations. Otherwise, it&#x27;s only natural to gravitate back toward your current state or short term goals to improve your immediate situation.</p></div></details></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

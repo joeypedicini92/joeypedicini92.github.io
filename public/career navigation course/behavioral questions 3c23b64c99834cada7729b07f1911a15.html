@@ -1,0 +1,687 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>behavioral questions</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-default_background {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
+.select-value-color-translucentGray { background-color: rgba(0, 0, 0, 0.06); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="3c23b64c-9983-4cad-a772-9b07f1911a15" class="page sans"><header><h1 class="page-title">behavioral questions</h1><p class="page-description"></p></header><div class="page-body"><p id="8637b21c-e461-4eca-8675-cc02db7ba111" class=""><a href="Create%20your%20%E2%80%9CBrag%20List%E2%80%9D%2096f2d8c3d22a4a6db08cdf8505a61c4d.html"><span class="icon">😎</span>Create your “Brag List”</a> </p><p id="d3e4d6cc-43d7-4848-b094-1ab84ae26677" class="">Mentee:</p><blockquote id="c7e765b0-512a-4b93-8e8e-7c32939ca372" class="">By the way, do you have a list of questions that often get asked in tech behaviorals? I have an interview later today that got scheduled really last minute.</blockquote><p id="17344bef-479f-4d1c-9702-180f4ecf39a2" class="">Mentor:</p><p id="90e36b13-35dd-44e1-bfcd-2a24c036f028" class="">Here&#x27;s a good resource I just found that goes through Amazon&#x27;s leadership principles and gives a few sample questions for each one:</p><figure id="b6776f75-7b16-4e0c-8eb4-67e2e1d98bf6"><a href="https://www.careerflow.ai/blog/amazon-behavioral-interview-questions" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Amazon Behavioral Interview Guide With Questions</div><div class="bookmark-description">Amazon behavioral interviews require separate preparation to ace them. Learn how to prepare for it with this comprehensive sample questions guide.</div></div><div class="bookmark-href"><img src="https://assets-global.website-files.com/635c591378332f38be25d45f/63a118d9ae0225649edea6da_CareerflowB%20256x256.png" class="icon bookmark-icon"/>https://www.careerflow.ai/blog/amazon-behavioral-interview-questions</div></div></a></figure><p id="4d2cf380-2949-4a56-830e-a1a3c6fc0363" class="">That&#x27;s obviously a lot of questions. So the best way to prepare for any kind of behavioral question is to just keep a list of &quot;achievements&quot; or &quot;key moments&quot; that you can confidently talk about. And when you talk about them in an answer, typically you want to follow this kind of format:</p><p id="76989a4b-70c0-4b53-814a-a7b8446fc571" class="">
+</p><ul id="3c4d9067-2932-49fa-9217-801220b7473b" class="bulleted-list"><li style="list-style-type:disc">Describe the problem you encountered.</li></ul><ul id="3262173d-e7f0-4a61-91bf-d902aabf83e7" class="bulleted-list"><li style="list-style-type:disc">Explain your thought process in approaching the problem.</li></ul><ul id="9af121b2-47f7-43f3-8314-7d1e0c6381d0" class="bulleted-list"><li style="list-style-type:disc">Share the steps you took to solve it.</li></ul><ul id="66306c67-8ca4-44aa-997c-ef503a5e9412" class="bulleted-list"><li style="list-style-type:disc">Discuss the impact that your solution had.</li></ul><ul id="e24522ba-f75b-4fd8-9513-96d769eb8e97" class="bulleted-list"><li style="list-style-type:disc">Reflect on what you learned from the experience.</li></ul><ul id="4f7d2d14-a21c-49ae-a76d-e024e61c35b8" class="bulleted-list"><li style="list-style-type:disc">Explain what you would have done differently with the knowledge you have now.</li></ul><h3 id="186ae9ea-7564-4ce6-ada3-ee31e1bfc288" class="">Example:</h3><ul id="e0b60658-2ff1-438a-9368-40f064794ab1" class="bulleted-list"><li style="list-style-type:disc">Very strong customer service orientation.</li></ul><ul id="e3619848-536d-4bab-8ba4-b11e94a79d47" class="bulleted-list"><li style="list-style-type:disc">While working at ______, there was a situation where ____ happened. The customer was feeling ______ because ______. I noticed this and decided to _____. The ultimately resulted in the customer _______. This experience taught me _______. Knowing what I know now, I would have handled _______ differently by doing _______ instead.</li></ul><p id="0e5f2351-be18-4c42-bd10-49dfb4dafe15" class=""><br/>Keep in mind the interviewer doesn&#x27;t know anything about this situation or experience, so it&#x27;s important to paint a nice clear picture of the background of it before diving into your specific impact.<br/></p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="40571da7-d6d0-48eb-9620-13a8816f852c"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><strong>Practice Problem</strong><br/><br/>Tell me about your most significant career failure and what you learned from it.<br/></div></figure><p id="e7e8cace-c898-4c94-981e-db25fcd15be0" class="">Mentee:</p><blockquote id="262de4b6-5347-4e5b-9d0a-c1cf91697c7b" class="">When I think about failings in my career, the prominent experiences that come to mind are instances where I&#x27;ve failed to get a job that I really like. The biggest on in my mind is when I applied for an internship at Bain for my junior summer. I got very attached to the job description based on what I heard at large webinars that they held at my school, read up on the company and got to know their values and work culture, and was really hopeful about my application. But I never even got the interview or a chance to show who I am, because I had neglected to actually reach out to anyone at the firm and actually make myself and my interest known to them. All the preparation and hopefulness had been done on my side, but that wasn&#x27;t enough to capture the company&#x27;s interest. From this experience, the next summer when I was applying for a full time role, I knew the importance of getting to know the people who actually worked at the firm and could talk about specific experiences and company quirks that one can&#x27;t see from just browsing online. I was able to get an interview and make it through the first round. Though ultimately I wasn&#x27;t able to get the job, I was really proud of the progress I had made in comparison to my first attempt.</blockquote><p id="3122b596-14de-44cd-8edc-9cfd54a336c7" class="">Mentor:</p><blockquote id="da3e43c5-4f65-45d1-89e2-7b17ce9ac326" class="">Love that answer, really well done! You got this</blockquote><p id="a3d1e388-a8a2-481b-902e-a319a930cbca" class="">Mentee:</p><blockquote id="4e65ec77-a91c-409c-9197-32f47eeeac88" class="">Thank you! For the resource and practice question I think I&#x27;m struggling most with trying to find an answer for when they ask about technical aspects of projects that I&#x27;ve done before I don&#x27;t know much detail I need to get into?</blockquote><p id="ac1b03f6-f200-4f3d-a4c6-1fd770a2474c" class="">Mentor:</p><blockquote id="9facbcf5-f744-467b-a78b-30d27260df00" class="">It&#x27;s really going to depend on the question that was asked. If it&#x27;s very specifically about something technical and you don&#x27;t have much to say, just be honest. Maybe mention that you don&#x27;t have much experience with that technology but you can give a related answer about something else you have experience with.<br/><br/>Let&#x27;s try this one:<br/><br/>Tell me about a time you learned something over a short period to accomplish a task. each question is an opportunity to share something about yourself. It&#x27;s not always about answering the question perfectly. It&#x27;s about showing who you truly are to the interviewer. Sometimes they don&#x27;t care about techncal details, they care that you are honest and hardworking...so how do you show someone who knows nothing about you that you are honest and hardworking?<br/></blockquote><p id="2b81ae99-394e-4451-ae66-50aaeb9660c1" class="">Mentee:</p><blockquote id="df63767e-7b41-457f-b063-2d40895f8b9b" class="">My first summer in college, I was part of a student startup working on an app called Know Your Ballot that was dedicated to making information about voting more accessible to everyone, with specific demographics being youth who may have never been interested in voting before, and just became too apathetic to the whole process as they grew up. I joined the group without a specific role assigned, so my job was to fill in with whatever was needed. At that time, we were creating mockups of the app so we could have a good idea of what preliminary featrues we wanted to include and what the layout of the functions would look like. And since it was my first experience getting involved with a startup project, I learned how to use Invision Studio to create wireframes of different pages in the app within a couple of weeks. I followed a lot of video tutorials on how to use Studio and browsed different apps to get inspiration, and was able to pull together some pretty nice pages!</blockquote><p id="6bd06c81-49e6-4fdf-b8d6-b810a9100dae" class="">Mentor:</p><blockquote id="b00a066c-cb37-4b69-b63f-b6c5f57fb0d8" class="">That&#x27;s great! I will say I think you could have taken the answer a liiiiiitle further, it felt like it ended kind of abrubtly I&#x27;d like to have heard what happened with those pages other than you just created them and that was that probably something the interviewer would ask a follow up about</blockquote><p id="d42d8f10-4589-4c8c-b695-02dc9f3393ed" class="">Mentee:</p><blockquote id="89bd1c7d-777b-42d0-91a1-78b70937ac3c" class="">Got it! To add:<br/>The pages were really helpful in allowing us to show a visualization of our goals. We used them in our pitch deck whenever we talked to anyone about our project, including community members we interviewed to get their thoughts on the usefulness of the app, and experinced entreprenuers who we were going to for advice and mentorship.<br/></blockquote><p id="0fa746f1-a360-4c32-b51b-dcf5e8c4e1b7" class="">
+</p><p id="e0b0c209-3c7f-4565-a1b0-86d78a0caeed" class="">Mentor:</p><blockquote id="719925f0-2f4b-4796-af01-53f7da061d4c" class="">You got this! Remember that the real goal is to feel confident in yourself. Getting the job is out of your hands it&#x27;s their decision based on what they need, so don&#x27;t sweat the outcome. It&#x27;s your job to just be confident and be yourself and the rest will fall into place</blockquote><p id="3141d7fc-362c-4a20-b633-1ee3f6e48602" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
