@@ -3,15 +3,15 @@ import Head from 'next/head'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import logoClementine from '@/images/music/clementine.png'
-import logoBoychoir from '@/images/music/columbus_boychoir.png'
 import logoFocusAreas from '@/images/articles/focus_areas.png'
 import logoSilentVoices from '@/images/articles/silent_voices.png'
 import logoStandUp from '@/images/articles/stand_up.jpeg'
 import logoPairProgram from '@/images/articles/pair_program.jpeg'
 import logoHDD from '@/images/articles/hdd.jpeg'
 import logoTopMentor from '@/images/articles/top_mentor.png'
-
+import logoHDDPDF from '@/images/articles/hdd_pdf.png'
+import logoMVP from '@/images/articles/building_mvp.png'
+//
 const projects = [
   {
     name: 'How Did I Become a CTO by an ex-Amazon Frontend Engineer',
@@ -19,6 +19,20 @@ const projects = [
       'Joey Pedicini, a CTO, ex-Amazon worker, and frontend engineer, shares his journey in the tech industry. The impact of becoming a parent on his career, the value of journaling, building projects from personal passion, and his approach to mentorship. Joey also highlights his experiences working at Amazon, dealing with imposter syndrome, and the transition to becoming a CTO at a small startup.',
     link: { href: 'https://www.youtube.com/watch?v=hqZMsnBK3Jc', label: 'How Did I Become a CTO by an ex-Amazon Frontend Engineer' },
     logo: logoTopMentor,
+  },
+  {
+    name: 'Human Driven Development: Balancing Speed, Quality, and Sanity',
+    description:
+      'A presentation on my career journey, lessons learned, my engineering philosophy, and how to apply the principles of Human Driven Development to your team. This talk was given in 2024.',
+    link: { href: '/Human Driven Development.pdf', label: 'Human Driven Development: Balancing Speed, Quality, and Sanity' },
+    logo: logoHDDPDF,
+  },
+  {
+    name: 'Building an MVP | Session 1: Idea Generation',
+    description:
+      'In this presentation I discuss the process of coming up with an idea for a Minimum Viable Product (MVP).',
+    link: { href: 'https://youtu.be/kuuFT7ay3Zs?si=6eSaCriPSSAT5uC1', label: 'Building an MVP | Session 1: Idea Generation' },
+    logo: logoMVP,
   },
   {
     name: `5 Key Focus Areas for a Successful Start in Your Tech Career`,

@@ -33,6 +33,17 @@ export default function ThankYou() {
         </h2>
         <Testimonial
           className={"mb-24 mt-6"}
+          client={{ name: 'Anu', logo: null }}
+        >
+          I had an amazing experience with Joey as my mentor! He guided me through every step of product development, from identifying key problems to market analysis, UI mocks, and user stories. His calm and patient approach made the process smooth and stress-free, even as I started coding. He never rushed me and was always ready to pause the mentorship when I needed to focus on other things. His expertise and supportive attitude were invaluable. If you're looking for a knowledgeable, patient, and adaptable mentor who can take you from idea to implementation, I highly recommend working with him. Thank you, Joey, for everything!
+        </Testimonial>
+        <Testimonial
+          className={"mb-24 mt-6"}
+          client={{ name: 'John-Paul', logo: null }}
+        >
+          Working with Joey over the last several months has been nothing short of fantastic. I’ve been so impressed at his commitment to helping me learn web development, and his willingness to go above and beyond to improve my learning journey. He is very knowledgeable about software engineering, and always patient when walking through a topic/bug I’m stuck on. You'd be lucky to have him as a mentor!        </Testimonial>
+        <Testimonial
+          className={"mb-24 mt-6"}
           client={{ name: 'Nic', logo: null }}
         >
           Joey made my very first foray into development a total breeze. I came to him with little more than an idea, but Joey was able to elicit the right details from me to get us moving down the runway immediately. Faster than I ever expected, he whipped up a proof of concept that inspired confidence and allowed me to iterate and improve the project in ways that I otherwise wouldn't have discovered.
@@ -52,10 +63,20 @@ export default function ThankYou() {
         </Testimonial>
         <Testimonial
           className="mb-24 mt-6"
+          client={{ name: 'Alaa', logo: null }}
+        >
+          Joey is an amazing mentor and a really good person. He always tries his best to help others and is very dedicated to helping his mentees succeed. During our mentorship, Joey helped me a lot. He taught me new technical skills and also helped me to feel less nervous around other people and be better at talking to them. Because of Joey's help, I learned so many new things that will be useful to me at work and in life. I am very thankful for the time he spent with me and for always being there to help. If you're looking for a mentor who really cares, I definitely recommend Joey!        </Testimonial>
+        <Testimonial
+          className="mb-24 mt-6"
           client={{ name: 'Davide', logo: null }}
         >
           Joey helped me switch my career to Web Development, he's an amazing mentor. He gave me great advice on how to enhance my portfolio website, improving my CV, how to bring out my best potential at jobs interviews and managing my personal projects. Plus, he's really friendly and easy to talk to. Thanks to him, I succeded in finding a great job. I highly recommend him to anyone looking for career guidance!
         </Testimonial>
+        <Testimonial
+          className="mb-24 mt-6"
+          client={{ name: 'April', logo: null }}
+        >
+          Joey was a great mentor! He was very understanding and patient, and was always willing to answer all of my questions even if I asked about the same concepts repetitively. His explanations were very clear and often accompanied by examples that helped give me a concrete understanding of the topics we were discussing. I also really appreciated that from the first meeting and throughout the mentorship, Joey had a clear (but also flexible) game plan on how he could help me improve over time.        </Testimonial>
         <Testimonial
           className="mb-24 mt-6"
           client={{ name: 'Ekaterina', logo: null }}
