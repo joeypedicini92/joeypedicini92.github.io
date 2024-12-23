@@ -24,6 +24,19 @@ export default function ThankYou() {
       </Head>
       <SimpleLayout title="Mentorship and Coaching"
         intro="I offer software development mentorship and fractional CTO services. I have over 12 years of experience in software development and have worked with companies ranging from startups to Fortune 500 companies.">
+        <h2 className="text-xl font-bold">
+          What I Offer
+        </h2>
+        <ul className="list-disc list-inside mb-10 ml-8">
+          <li>Pair Programming: Collaborate on real-world coding challenges.</li>
+          <li>Interview Preparation: Build confidence and refine your technical interview skills.</li>
+          <li>Resume & Portfolio Advice: Showcase your experience effectively to stand out.</li>
+          <li>Software Architecture Guidance: Design scalable, maintainable systems.</li>
+          <li>Code Reviews: Receive constructive feedback to elevate your work.</li>
+          <li>Mindset & Confidence Building: Overcome self-doubt and build resilience.</li>
+          <li>Code Therapy: A unique approach to overcoming creative and technical roadblocks.</li>
+        </ul>
+
         <a href="https://mentorcruise.com/mentor/joeypedicini/">
           <img src="https://cdn.mentorcruise.com/img/banner/navy-booking-badge.svg" width="240" alt="MentorCruise" />
         </a>

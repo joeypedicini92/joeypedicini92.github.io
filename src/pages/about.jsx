@@ -221,14 +221,34 @@ export default function About() {
           </div>
           <div className="lg:order-first lg:row-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-              Hi, I’m Joey Pedicini.
+              Hi, I’m Joey Pedicini
             </h1>
+            <h2 className="mt-6 text-2xl font-semibold tracking-tight text-zinc-600 dark:text-zinc-400 sm:text-3xl">
+              - The Holistic CTO
+            </h2>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400 mb-10">
-              <p className="text-lg text-gray-500">
-                Recently I led the frontend development for Amazon’s initiative to integrate One Medical membership into the Amazon Prime benefits. Not too long into the project, I found out I would need to relocate my family to Seattle or resign. Despite the stress and pressure from this situation, I fulfilled my responsibilities and completed the project on time. I hoped that my strong effort would give me some room for negotiation, especially since I had previously negotiated a remote position when I first joined Amazon in early 2022. Unfortunately, Amazon was unwilling to budge on their policy, and so I resigned.
+              <p>
+                My mission is to infuse more humanity into the tech world. Building software is not just about writing code; it’s about designing systems that solve real problems without creating new ones. It’s about empowering people—clients, teams, and users—to thrive in their roles and achieve their aspirations.
               </p>
               <p>
-                This experience ignited a strong desire to take a leap of faith into entrepreneurship. It led me to go all-in on building CleverApply alongside my co-founder, Jahan Ghaznavi. Working with him as his CTO has been an incredible journey, and I'm thrilled to see where this venture takes us.
+                At the heart of my philosophy is Human Driven Development (HDD):
+              </p>
+              <ul className="list-disc list-inside">
+                <li>Adaptable Processes: Rejecting rigid frameworks in favor of flexible methods that evolve as the team grows.</li>
+                <li>Employee Morale as the Foundation: Placing each team member in their optimal position—not just for the company’s success, but for their personal fulfillment and growth.</li>
+                <li>Software Designed by Humans, for Humans: Crafting tools that enhance lives and address real-world needs with care and intention.</li>
+              </ul>
+              <p>
+                I draw inspiration from sports, where the best managers—like José Mourinho—see the unique strengths in each player and create an environment where even the most unassuming individuals can shine. Similarly, a great manager in tech focuses on creating a culture where everyone is empowered to contribute meaningfully, aligning personal goals with the team’s mission.
+              </p>
+              <p>
+                This requires more than processes or metrics; it demands authentic, ongoing conversations to truly understand each individual’s strengths, motivations, and challenges. It means embracing open dialogue about what’s working and what isn’t, without forcing interactions through rigid systems.
+              </p>
+              <p>
+                By centering the team and adapting to their unique dynamics, we unleash their full potential and create products that matter. This is what Human Driven Development is all about: letting the energy flow naturally within the team, and nurturing a culture of collaboration, trust, and purpose.
+              </p>
+              <p>
+                Let’s build software—and teams—that inspire.
               </p>
             </div>
           </div>
@@ -249,14 +269,14 @@ export default function About() {
                 Follow on GitHub
               </SocialLink>
               <SocialLink
-                href="https://www.instagram.com/joeypedicini"
+                href="https://www.instagram.com/holistic_cto"
                 icon={InstagramIcon}
                 className="mt-4"
               >
                 Follow on Instagram
               </SocialLink>
               <SocialLink
-                href="https://www.youtube.com/@holistic_autistic"
+                href="https://www.youtube.com/@holistic_cto"
                 icon={YoutubeIcon}
                 className="mt-4"
               >
@@ -269,8 +289,6 @@ export default function About() {
               >
                 Follow on Soundcloud
               </SocialLink>
-
-
               <SocialLink
                 href="https://app.bonjournl.com/public/824514e2-5960-4e2c-8b60-2f54bf3a4d86"
                 icon={BonjournlIcon}

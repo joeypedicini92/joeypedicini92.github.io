@@ -13,7 +13,7 @@ export default function ThankYou() {
           content="A course I made in 2023 to help people navigate a career in tech."
         />
       </Head>
-      <SimpleLayout title="Career Navigation Course"
+      <SimpleLayout title="Bringing Humanity to Software Development"
         intro="Welcome to the Career Navigation Course! This course is designed to help you navigate a career in tech. Whether you are just starting a career in tech, or you're looking for the next step in your carer, or you are struggling with burnout and trying to navigate difficult situations at work, this course is for you.">
 
         <div className="flex justify-left">
