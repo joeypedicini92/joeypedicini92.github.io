@@ -15,7 +15,7 @@ const projects = [
     name: `This World Feels Like It's Falling Apart Sometimes`,
     description:
       `April 2024. The world will always feel like it's falling apart sometimes, how do you stay focused on your inner world and maintain balance there? All of the solutions to your problems already exist. It just requires knowing yourself more intimately. Not running away from the scary thoughts, not trying to numb the painful thoughts, breathing through the anxious thoughts. It's all energy. Feel the energy. Use the energy and convert it to love. And that starts by loving yourself unconditionally.`,
-    link: { href: 'https://joeypedicini.notion.site/This-World-Feels-Like-It-s-Falling-Apart-Sometimes-a2baab236a8343f8a2c766b6fef797a6?pvs=74', label: `This World Feels Like It's Falling Apart Sometimes` },
+    link: { href: 'https://music.youtube.com/playlist?list=OLAK5uy_ntg8YYOh0QAvqgDkdIxeNp7yXltvxnM1U', label: `This World Feels Like It's Falling Apart Sometimes` },
     logo: logoWorld,
   },
   {
@@ -96,7 +96,7 @@ export default function Projects() {
                 />
               </div>
               <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
-                <Card.Link href={project.link.href}>{project.name}</Card.Link>
+                <Card.Link href={project.link.href} target="_blank" rel="noopener noreferrer">{project.name}</Card.Link>
               </h2>
               <Card.Description>{project.description}</Card.Description>
               <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">

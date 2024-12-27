@@ -11,6 +11,8 @@ import logoHDD from '@/images/articles/hdd.jpeg'
 import logoTopMentor from '@/images/articles/top_mentor.png'
 import logoHDDPDF from '@/images/articles/hdd_pdf.png'
 import logoMVP from '@/images/articles/building_mvp.png'
+import logoCareerNav from '@/images/articles/career_nav.png'
+import logoWorld from '@/images/music/this_world_feels_like_its_falling_apart_sometimes.png'
 //
 const projects = [
   {
@@ -19,6 +21,13 @@ const projects = [
       'Joey Pedicini, a CTO, ex-Amazon worker, and frontend engineer, shares his journey in the tech industry. The impact of becoming a parent on his career, the value of journaling, building projects from personal passion, and his approach to mentorship. Joey also highlights his experiences working at Amazon, dealing with imposter syndrome, and the transition to becoming a CTO at a small startup.',
     link: { href: 'https://www.youtube.com/watch?v=hqZMsnBK3Jc', label: 'How Did I Become a CTO by an ex-Amazon Frontend Engineer' },
     logo: logoTopMentor,
+  },
+  {
+    name: 'Software Career Navigation Course',
+    description:
+      `This course is designed to help you navigate a career in tech. Whether you are just starting a career in tech, or you're looking for the next step in your carer, or you are struggling with burnout and trying to navigate difficult situations at work, this course is for you.`,
+    link: { href: 'https://joeypedicini.notion.site/Career-Navigation-Course-16603bfd984942148ab80724fabccfe1', label: `Software Career Navigation Course` },
+    logo: logoCareerNav,
   },
   {
     name: 'Human Driven Development: Balancing Speed, Quality, and Sanity',
@@ -69,7 +78,13 @@ const projects = [
     link: { href: 'https://www.linkedin.com/pulse/new-software-development-methodology-human-driven-joey-pedicini-58cpe/?trackingId=1O%2Buef%2BQQQmhEceYrJrRxQ%3D%3D', label: 'A new software development methodology: Human-driven Development' },
     logo: logoHDD,
   },
-
+  {
+    name: 'This World Feels Like It’s Falling Apart Sometimes',
+    description:
+      `The world will always feel like it's falling apart sometimes, how do you stay focused on your inner world and maintain balance there? All of the solutions to your problems already exist. It just requires knowing yourself more intimately. Not running away from the scary thoughts, not trying to numb the painful thoughts, breathing through the anxious thoughts. It's all energy. Feel the energy. Use the energy and convert it to love. And that starts by loving yourself unconditionally.`,
+    link: { href: 'https://joeypedicini.notion.site/This-World-Feels-Like-It-s-Falling-Apart-Sometimes-a2baab236a8343f8a2c766b6fef797a6?pvs=74', label: 'This World Feels Like It’s Falling Apart Sometimes' },
+    logo: logoWorld,
+  },
 ]
 
 function LinkIcon(props) {
@@ -113,7 +128,7 @@ export default function Projects() {
                 />
               </div>
               <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
-                <Card.Link href={project.link.href}>{project.name}</Card.Link>
+                <Card.Link href={project.link.href} target="_blank" rel="noopener noreferrer">{project.name}</Card.Link>
               </h2>
               <Card.Description>{project.description}</Card.Description>
               <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
