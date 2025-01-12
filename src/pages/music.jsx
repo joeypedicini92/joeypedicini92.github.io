@@ -66,8 +66,7 @@ function LinkIcon(props) {
   )
 }
 
-export default function Projects() {
-  debugger
+export default function Music() {
   return (
     <>
       <Head>

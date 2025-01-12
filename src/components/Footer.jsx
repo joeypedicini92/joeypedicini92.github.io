@@ -23,10 +23,9 @@ export function Footer() {
               <div className="flex gap-6 text-sm font-medium text-zinc-800 dark:text-zinc-200">
                 <NavLink href="/">Home</NavLink>
                 <NavLink href="/mentorship">Mentorship</NavLink>
+                <NavLink href="/consulting">Consulting</NavLink>
                 <NavLink href="/media">Media</NavLink>
-                <NavLink href="/blog">Blog</NavLink>
-                <NavLink href="/projects">Projects</NavLink>
-                <NavLink href="/music">Music</NavLink>
+                <NavLink href="/about">About</NavLink>
               </div>
               <p className="text-sm text-zinc-400 dark:text-zinc-500">
                 &copy; {new Date().getFullYear()} Joey Pedicini. All rights
