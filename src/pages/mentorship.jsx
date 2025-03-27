@@ -46,6 +46,12 @@ export default function ThankYou() {
         </h2>
         <Testimonial
           className={"mb-24 mt-6"}
+          client={{ name: 'Arash', logo: null }}
+        >
+        I worked with Joey for about two months before landing my offer. Before our sessions, I had very low self-esteem after failing multiple technical interviews and had lost the motivation to keep applying. However, my consultation with Joey changed my perspective, I began to appreciate my worth and recognize my progress. We had many meaningful conversations and thorough prep sessions for my upcoming interviews. Each time, we both noticed significant improvement, sometimes even when I didn’t see it myself until he pointed it out. That’s why I believe it’s incredibly important to have someone guiding and monitoring your job search, not just to provide feedback but also to share their own experiences. Joey tailors his approach to each client and is very flexible with different levels of commitment. He is generous, kind, and an overall great person, which made it easy for me to trust him, a rare thing for me, especially during such a challenging time. We built a strong, supportive professional connection, and I plan to stay in touch with him moving forward. Oh, and yes, I got the job I wanted! We practiced relentlessly, worked on my weaknesses, and reinforced my strengths. Beyond interview prep, we also had positive discussions about other aspects of life. I highly recommend Joey—not just as a mentor but as a supportive, kind-hearted colleague. He’s a super cool dude (and dad)!
+        </Testimonial>
+        <Testimonial
+          className={"mb-24 mt-6"}
           client={{ name: 'Anu', logo: null }}
         >
           I had an amazing experience with Joey as my mentor! He guided me through every step of product development, from identifying key problems to market analysis, UI mocks, and user stories. His calm and patient approach made the process smooth and stress-free, even as I started coding. He never rushed me and was always ready to pause the mentorship when I needed to focus on other things. His expertise and supportive attitude were invaluable. If you're looking for a knowledgeable, patient, and adaptable mentor who can take you from idea to implementation, I highly recommend working with him. Thank you, Joey, for everything!

@@ -3,6 +3,7 @@ import Image from 'next/future/image'
 import Head from 'next/head'
 import clsx from 'clsx'
 import { Container } from '@/components/Container'
+import Link from 'next/link'
 
 import { Testimonial } from '@/components/Testimonial'
 import { FadeIn } from '@/components/FadeIn'
@@ -54,9 +55,71 @@ export default function Home() {
                       My mission is to infuse more humanity into the tech world. Building software is not just about writing code; it’s about designing systems that solve real problems without creating new ones. It’s about empowering people—clients, teams, and users—to thrive in their roles and achieve their aspirations.
                     </p>
                    
-                    <p>
-                      Let’s build software—and teams—that inspire.
-                    </p>
+                    <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-2">
+                      <Link
+                        href="/mentorship"
+                        passHref
+                      >
+                        <a className="block p-6 bg-zinc-100 dark:bg-zinc-800 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                          <h3 className="text-lg font-semibold text-zinc-800 dark:text-zinc-100">
+                            Mentorship
+                          </h3>
+                          <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+                            Learn more about my mentorship programs and how I can help you grow.
+                          </p>
+                        </a>
+                      </Link>
+                      <a
+                        href="/codecompass"
+                        className="block p-6 bg-zinc-100 dark:bg-zinc-800 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+                      >
+                        <h3 className="text-lg font-semibold text-zinc-800 dark:text-zinc-100">
+                          CodeCompass
+                        </h3>
+                        <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+                          Explore CodeCompass, my holistic software consulting company.
+                        </p>
+                      </a>
+                      <Link
+                        href="/media"
+                        passHref
+                      >
+                        <a className="block p-6 bg-zinc-100 dark:bg-zinc-800 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                          <h3 className="text-lg font-semibold text-zinc-800 dark:text-zinc-100">
+                            Media
+                          </h3>
+                          <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+                            Check out my podcasts, videos, articles, and other media appearances.
+                          </p>
+                        </a>
+                      </Link>
+                      <Link
+                        href="/about"
+                        passHref
+                      >
+                        <a className="block p-6 bg-zinc-100 dark:bg-zinc-800 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                          <h3 className="text-lg font-semibold text-zinc-800 dark:text-zinc-100">
+                            About
+                          </h3>
+                          <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+                            Learn more about me and my journey as a CTO and coach.
+                          </p>
+                        </a>
+                      </Link>
+                      <Link
+                        href="/blog"
+                        passHref
+                      >
+                        <a className="block p-6 bg-zinc-100 dark:bg-zinc-800 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                          <h3 className="text-lg font-semibold text-zinc-800 dark:text-zinc-100">
+                            Blog
+                          </h3>
+                          <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+                            Read my latest thoughts and insights on technology and leadership.
+                          </p>
+                        </a>
+                      </Link>
+                    </div>
                   </div>
                 </div>
                 </div>

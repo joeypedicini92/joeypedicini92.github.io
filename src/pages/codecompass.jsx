@@ -38,24 +38,29 @@ export default function Consulting() {
   return (
     <>
       <Head>
-        <title>Coaching - Joey Pedicini</title>
+        <title>CodeCompass - Joey Pedicini</title>
         <meta
-          name="Software Development Coaching."
-          content="Software Development Coaching."
+          name="description"
+          content="CodeCompass"
         />
       </Head>
       <SimpleLayout
-        title="Software D evelopment Coaching"
-        intro="I've been a software developer for over a decade and have worked with a variety of technologies and industries. I've helped startups and established companies build and scale their products. I've also mentored junior developers and engineering leaders. Whatever your goals are, I'm here to help you achieve them."
+        title="CodeCompass"
+        intro="CodeCompass is my software consulting business. I help companies build better software and help developers grow their careers. I offer a variety of services including consulting, training, and mentorship. Click the link below to go to my business website and learn more."
       >
-
-<p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
-        For more information, visit my business website at{' '}
-        <a href="https://codecompass.org" className="pl-2 text-teal-500 hover:text-teal-700">
-          CodeCompass
-        </a>.
-      </p>
-
+        <div className="mt-8 flex justify-center">
+          <div className="max-w-xl w-full bg-white dark:bg-zinc-800 shadow-lg rounded-lg p-6">
+            <p className="text-sm font-medium text-zinc-600 dark:text-zinc-300">
+              For more information, visit my business website at{' '}
+              <a
+                href="https://codecompass.org"
+                className="text-teal-500 hover:text-teal-700 underline"
+              >
+                CodeCompass
+              </a>.
+            </p>
+          </div>
+        </div>
       </SimpleLayout>
     </>
   )
